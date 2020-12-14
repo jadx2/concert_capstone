@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Lato;
+  color: #272a31;
+}
+
+a {
+  color: #272a31;
+  text-decoration: none;
+}
+a:hover {
+  color: #272a31;
+}
+
+li {
+  list-style: none;
+}
+
+.mobile-navbar,
+.greeting,
+.featured-artists {
+  padding: 20px;
+}
+
+/*# sourceMappingURL=main.css.map */
