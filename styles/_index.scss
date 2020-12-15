@@ -1,0 +1,97 @@
+@import "variables";
+@import "fonts";
+
+.greeting {
+	padding: 20px 20px 80px 20px;
+	background-image: url(../assets/images/backgrounds/crowd.jpg);
+	background-size: cover;
+	.greeting-title {
+		position: relative;
+		font-family: Lato;
+		margin-bottom: 20px;
+		&::before {
+			content: "Creative Productions Present:";
+			position: absolute;
+			top: -6px;
+			left: 6px;
+			font-size: 9px;
+			font-style: italic;
+		}
+	}
+
+	.festival-info {
+		font-size: 14px;
+		background-color: $grey-beta;
+		border: 3px solid $white;
+		padding: 5px;
+		margin-bottom: 40px;
+	}
+
+	.date {
+		color: $white;
+		font-weight: bold;
+	}
+
+	.address {
+		color: $white;
+		font-size: 18px;
+	}
+}
+
+.main-program {
+	background-image: url(../assets/images/backgrounds/blackbg.jpg);
+	background-color: $black;
+	padding: 20px 10px;
+	.main-program-title {
+		position: relative;
+		color: $white;
+		&::after {
+			content: "";
+			background: $orange;
+			width: 60px;
+			display: block;
+			height: 2px;
+			position: absolute;
+			bottom: -10px;
+			left: 40%;
+		}
+	}
+	.program-items {
+		color: $white;
+		padding: 30px 0;
+		margin: 0 10px;	
+		.program-item {
+			display: flex;
+			align-items: center;
+			padding: 20px;
+			margin-bottom: 10px;
+			background-color: $grey-alpha;
+			.item-title {
+				padding: 0;
+				color: $orange;
+				font-weight: bold;
+			}
+			.item-img {
+				padding: 0;
+				width: 35px;
+				display: flex;
+				img {
+	  			filter: invert(100%);
+				}
+			}
+		}
+	}
+	.btn-container {
+		display: flex;
+		margin-bottom: 25px;
+		a {
+			color: white;
+			background-color: $orange;
+			padding: 16px;
+			font-size: 14px;
+			font-weight: bold;
+		}
+	}
+}
+
+

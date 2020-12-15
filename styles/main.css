@@ -4,9 +4,53 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: Cocogoose;
+  src: url("assets/fonts/Cocogoose.ttf");
+}
+@font-face {
+  font-family: Cocogoose-italic;
+  src: url("assets/fonts/Cocogoose-Italic.ttf");
+}
+html {
+  font-size: 10px;
+}
+
 body {
   font-family: Lato;
+  font-size: 1rem;
   color: #272a31;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+h1 {
+  font-size: 4.3rem;
+  font-weight: bold;
+  color: #ec5242;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 2.6rem;
+  color: #ec5242;
+}
+
+h3 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+figure {
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -21,10 +65,115 @@ li {
   list-style: none;
 }
 
-.mobile-navbar,
-.greeting,
-.featured-artists {
+img {
+  width: 100%;
+}
+
+.fa-bars {
+  font-size: 30px;
   padding: 20px;
+}
+
+@font-face {
+  font-family: Cocogoose;
+  src: url("assets/fonts/Cocogoose.ttf");
+}
+@font-face {
+  font-family: Cocogoose-italic;
+  src: url("assets/fonts/Cocogoose-Italic.ttf");
+}
+.greeting {
+  padding: 20px 20px 80px 20px;
+  background-image: url(../assets/images/backgrounds/crowd.jpg);
+  background-size: cover;
+}
+.greeting .greeting-title {
+  position: relative;
+  font-family: Lato;
+  margin-bottom: 20px;
+}
+.greeting .greeting-title::before {
+  content: "Creative Productions Present:";
+  position: absolute;
+  top: -6px;
+  left: 6px;
+  font-size: 9px;
+  font-style: italic;
+}
+.greeting .festival-info {
+  font-size: 14px;
+  background-color: rgba(211, 211, 211, 0.9);
+  border: 3px solid #fff;
+  padding: 5px;
+  margin-bottom: 40px;
+}
+.greeting .date {
+  color: #fff;
+  font-weight: bold;
+}
+.greeting .address {
+  color: #fff;
+  font-size: 18px;
+}
+
+.main-program {
+  background-image: url(../assets/images/backgrounds/blackbg.jpg);
+  background-color: #272a31;
+  padding: 20px 10px;
+}
+.main-program .main-program-title {
+  position: relative;
+  color: #fff;
+}
+.main-program .main-program-title::after {
+  content: "";
+  background: #ec5242;
+  width: 60px;
+  display: block;
+  height: 2px;
+  position: absolute;
+  bottom: -10px;
+  left: 40%;
+}
+.main-program .program-items {
+  color: #fff;
+  padding: 30px 0;
+  margin: 0 10px;
+}
+.main-program .program-items .program-item {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 10px;
+  background-color: rgba(211, 211, 211, 0.1);
+}
+.main-program .program-items .program-item .item-title {
+  padding: 0;
+  color: #ec5242;
+  font-weight: bold;
+}
+.main-program .program-items .program-item .item-img {
+  padding: 0;
+  width: 35px;
+  display: flex;
+}
+.main-program .program-items .program-item .item-img img {
+  filter: invert(100%);
+}
+.main-program .btn-container {
+  display: flex;
+  margin-bottom: 25px;
+}
+.main-program .btn-container a {
+  color: white;
+  background-color: #ec5242;
+  padding: 16px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.intro {
+  padding: 0 20px;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,14 +1,44 @@
 @import "variables";
 
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+html {
+	font-size: 10px;
 }
 
 body {
 	font-family: Lato;
+	font-size: 1rem;
 	color: $black;
+}
+
+.container-fluid {
+	padding: 0;
+}
+
+h1 {
+	font-size: 4.3rem;
+	font-weight: bold;
+	color: $orange;
+	text-transform: uppercase;
+}
+
+h2{
+	font-size: 2.6rem;
+	color: $orange;
+}
+
+h3 {
+	font-size: 2rem;
+	text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+figure {
+	margin: 0;
+	padding: 0;
 }
 
 a {
@@ -23,8 +53,6 @@ li {
 	list-style: none;
 }
 
-.mobile-navbar,
-.greeting,
-.featured-artists{
-	padding: 20px;
+img {
+	width: 100%;
 }
