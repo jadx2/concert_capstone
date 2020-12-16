@@ -16,12 +16,8 @@ figure {
 }
 
 @font-face {
-  font-family: Cocogoose;
-  src: url("assets/fonts/Cocogoose.ttf");
-}
-@font-face {
-  font-family: Cocogoose-italic;
-  src: url("assets/fonts/Cocogoose-Italic.ttf");
+  font-family: "Cocogoose";
+  src: url(../assets/fonts/Cocogoose_trial.otf);
 }
 html {
   font-size: 10px;
@@ -38,6 +34,7 @@ body {
 }
 
 h1 {
+  font-family: "Cocogoose", sans-serif;
   font-size: 4.3rem;
   font-weight: bold;
   color: #ec5242;
@@ -86,7 +83,7 @@ img {
   }
 
   .greeting .fitting-container .greeting-title {
-    font-size: 6rem;
+    font-size: 8rem;
     width: 450px;
   }
   .greeting .fitting-container .greeting-title::before {
