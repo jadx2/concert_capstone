@@ -18,7 +18,7 @@ This project was build following [Cindy Shin's design.](https://www.behance.net/
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://jadx2.github.io/concert_capstone/)
 
 ## Authors
 
