@@ -22,160 +22,219 @@
   </head>
   <body>
     <!-- Mobile Navbar -->
-    <header class="container-fluid d-lg-none">
-      <nav><i class="fas fa-bars"></i></nav>
+    <header class="d-md-none">
+      <nav class="mobile-navbar"><i class="fas fa-bars"></i></nav>
     </header>
     <!-- Desktop Navbar -->
-    <header class="container-fluid d-none d-lg-block">
-      <nav>
-        <div>
-          <ul>
-            <li>
+    <header class="d-none d-md-block">
+      <nav class="desktop-navbar">
+        <div class="top-navbar">
+          <ul class="social-links">
+            <li class="social-link">
               <a href="#"><i class="fab fa-facebook-f"></i></a>
             </li>
-            <li>
+            <li class="social-link">
               <a href="#"><i class="fab fa-twitter"></i></a>
             </li>
-          </ul>
-          <ul>
-            <li><a href="#">English</a></li>
-            <li><a href="#">My Account</a></li>
-            <li><a href="#">Logout</a></li>
+            <li class="social-link"><a href="#">English</a></li>
+            <li class="social-link"><a href="#">My Account</a></li>
+            <li class="social-link"><a href="#">Logout</a></li>
           </ul>
         </div>
-        <div>
-          <a href="index.html">
-            <img src="assets/images/Sunset.png" alt="Sunset Logo" />
-          </a>
-          <ul>
-            <li><a target="_self" href="about.html">About</a></li>
-            <li><a href="#">Program</a></li>
-            <li><a href="#">Join</a></li>
-            <li><a href="#">Sponsors</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="#">Buy Tickets!</a></li>
-          </ul>
+        <div class="bottom-navbar">
+          <div class="container-nav">
+            <a class="top-logo" href="index.html">
+              <img src="assets/images/sunset.png" alt="Sunset Logo" />
+            </a>
+            <ul class="nav-links">
+              <li class="nav-link">
+                <a class="active" target="_self" href="about.html">About</a>
+              </li>
+              <li class="nav-link"><a href="#">Program</a></li>
+              <li class="nav-link"><a href="#">Join</a></li>
+              <li class="nav-link"><a href="#">Sponsors</a></li>
+              <li class="nav-link"><a href="#">News</a></li>
+              <li class="nav-link to-tickets">
+                <a href="tickets.html">Buy Tickets!</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
     </header>
     <!-- Main -->
-    <main class="cointainer-fluid">
-      <div>
-        <h1>Select Tickets</h1>
-        <p>Select the zone</p>
-      </div>
-      <table class="table table-striped">
-        <thead>
-          <tr>
-            <th scope="col">Zone</th>
-            <th scope="col">Price</th>
-            <th scope="col">N° Tickets</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>South</td>
-            <td>$50</td>
-            <td>
-              <select class="form-select" aria-label="Default select example">
-                <option selected>0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-              </select>
-            </td>
-          </tr>
-          <tr>
-            <td>South</td>
-            <td>$50</td>
-            <td>
-              <select class="form-select" aria-label="Default select example">
-                <option selected>0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-              </select>
-            </td>
-          </tr>
-          <tr>
-            <td>North</td>
-            <td>$30</td>
-            <td>
-              <select class="form-select" aria-label="Default select example">
-                <option selected>0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-              </select>
-            </td>
-          </tr>
-          <tr>
-            <td>East</td>
-            <td>$100</td>
-            <td>
-              <select class="form-select" aria-label="Default select example">
-                <option selected>0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-              </select>
-            </td>
-          </tr>
-          <tr>
-            <td>West</td>
-            <td>$100</td>
-            <td>
-              <select class="form-select" aria-label="Default select example">
-                <option selected>0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-              </select>
-            </td>
-          </tr>
-          <tr>
-            <td>Middle</td>
-            <td>$150</td>
-            <td>
-              <select class="form-select" aria-label="Default select example">
-                <option selected>0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-              </select>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <figure><img src="assets/images/pics/map.jpg" alt="Map" /></figure>
-      <a href="#">Checkout</a>
+    <main class="main">
+      <section class="tickets-header">
+        <div class="fitting-container">
+          <h2 class="tickets-title">Select Tickets</h2>
+          <p class="tickets-info"><span>Select</span> the zone</p>
+        </div>
+      </section>
+      <section class="tickets-prices">
+        <div class="fitting-container">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">Zone</th>
+                <th scope="col">Price</th>
+                <th scope="col">N° Tickets</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>South</td>
+                <td>$50</td>
+                <td>
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>South</td>
+                <td>$50</td>
+                <td>
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>North</td>
+                <td>$30</td>
+                <td>
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>East</td>
+                <td>$100</td>
+                <td>
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>West</td>
+                <td>$100</td>
+                <td>
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>Middle</td>
+                <td>$150</td>
+                <td>
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <figure class="map">
+            <img src="assets/images/pics/map.jpg" alt="Map" />
+          </figure>
+          <div class="btn-container">
+            <a class="checkout" href="#">Checkout</a>
+          </div>
+        </div>
+      </section>
+      <section class="partners">
+        <div class="fitting-container">
+          <h3 class="section-title">Partners</h3>
+          <ul class="partners-container">
+            <li class="partner">
+              <img
+                src="assets/images/icons/coca-cola-logo-transparent-background-11.png"
+                alt="Coca Cola"
+              />
+            </li>
+            <li class="partner">
+              <img
+                src="assets/images/icons/logo-airbnb-404px-grey-1.webp"
+                alt="Airbnb"
+              />
+            </li>
+            <li class="partner">
+              <img
+                src="assets/images/icons/Google-logo-grey.png"
+                alt="Google"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
     <!-- Footer -->
-    <Footer class="container-fluid">
-      <a href="index.html">
-        <img src="assets/images/Sunset.png" alt="Sunset Logo" />
-      </a>
-      <div>
-        <p>©2020 Some Rights Reserved</p>
-        <p>
-          Design based on
-          <a
-            href="https://www.behance.net/gallery/29845175/CC-Global-Summit-2015"
-            >Cindy Shin</a
-          >'s design.
-        </p>
+    <Footer class="footer">
+      <div class="fitting-container">
+        <a class="logo" href="index.html">
+          <img src="assets/images/sunset.png" alt="Sunset Logo" />
+        </a>
+        <div class="aknowledgement">
+          <p class="year">©2020 Some Rights Reserved</p>
+          <p class="cindy">
+            Design based on
+            <a
+              href="https://www.behance.net/gallery/29845175/CC-Global-Summit-2015"
+              >Cindy Shin</a
+            >'s design.
+          </p>
+        </div>
       </div>
     </Footer>
   </body>

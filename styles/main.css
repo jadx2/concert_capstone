@@ -456,4 +456,49 @@ img {
   margin-bottom: 10px;
 }
 
+.tickets-header {
+  background-color: rgba(211, 211, 211, 0.1);
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 14px;
+}
+.tickets-header .tickets-title {
+  color: #272a31;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.tickets-header .tickets-info {
+  border: 1px solid #d3d3d3;
+  width: 160px;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+.tickets-header .tickets-info span {
+  color: #ec5242;
+}
+
+.tickets-prices {
+  padding: 40px 20px;
+}
+.tickets-prices .table {
+  max-width: 500px;
+  border: 3px solid #ec5242;
+  margin: 0 auto 40px auto;
+  font-size: 14px;
+}
+.tickets-prices .table td {
+  width: 40px;
+}
+.tickets-prices .map {
+  margin: 0 auto 40px auto;
+  max-width: 500px;
+}
+.tickets-prices .checkout {
+  color: white;
+  background-color: #ec5242;
+  padding: 16px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
 /*# sourceMappingURL=main.css.map */
