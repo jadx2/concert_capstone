@@ -371,6 +371,7 @@ img {
 }
 .featured-artists .artists-container .artist-card .card-body {
   padding: 5px 10px;
+  width: 200px;
 }
 .featured-artists .artists-container .artist-card .card-body .artist-name {
   font-weight: bold;
