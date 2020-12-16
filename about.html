@@ -22,42 +22,47 @@
   </head>
   <body>
     <!-- Mobile Navbar -->
-    <header class="container-fluid d-lg-none">
-      <nav><i class="fas fa-bars"></i></nav>
+    <header class="d-md-none">
+      <nav class="mobile-navbar"><i class="fas fa-bars"></i></nav>
     </header>
     <!-- Desktop Navbar -->
-    <header class="container-fluid d-none d-lg-block">
-      <nav>
-        <div>
-          <ul>
-            <li>
+    <header class="d-none d-md-block">
+      <nav class="desktop-navbar">
+        <div class="top-navbar">
+          <ul class="social-links">
+            <li class="social-link">
               <a href="#"><i class="fab fa-facebook-f"></i></a>
             </li>
-            <li>
+            <li class="social-link">
               <a href="#"><i class="fab fa-twitter"></i></a>
             </li>
-          </ul>
-          <ul>
-            <li><a href="#">English</a></li>
-            <li><a href="#">My Account</a></li>
-            <li><a href="#">Logout</a></li>
+            <li class="social-link"><a href="#">English</a></li>
+            <li class="social-link"><a href="#">My Account</a></li>
+            <li class="social-link"><a href="#">Logout</a></li>
           </ul>
         </div>
-        <div>
-          <a href="index.html">
-            <img src="assets/images/Sunset.png" alt="Sunset Logo" />
-          </a>
-          <ul>
-            <li><a target="_self" href="about.html">About</a></li>
-            <li><a href="#">Program</a></li>
-            <li><a href="#">Join</a></li>
-            <li><a href="#">Sponsors</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="tickets.html">Buy Tickets!</a></li>
-          </ul>
+        <div class="bottom-navbar">
+          <div class="container-nav">
+            <a class="top-logo" href="index.html">
+              <img src="assets/images/sunset.png" alt="Sunset Logo" />
+            </a>
+            <ul class="nav-links">
+              <li class="nav-link">
+                <a target="_self" href="about.html">About</a>
+              </li>
+              <li class="nav-link"><a href="#">Program</a></li>
+              <li class="nav-link"><a href="#">Join</a></li>
+              <li class="nav-link"><a href="#">Sponsors</a></li>
+              <li class="nav-link"><a href="#">News</a></li>
+              <li class="nav-link to-tickets">
+                <a href="tickets.html">Buy Tickets!</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
     </header>
+    <!-- Main -->
     <main class="container-fluid">
       <section class="intro">
         <h1 class="about-title">Sunset Festival 2021</h1>

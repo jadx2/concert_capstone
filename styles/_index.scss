@@ -1,13 +1,10 @@
 @import "variables";
-@import "fonts";
-@import "section-title";
-@import "partners";
-@import "footer";
 
 .greeting {
 	padding: 40px 20px 80px 20px;
 	background-image: url(../assets/images/backgrounds/crowd.jpg);
 	background-size: cover;
+	background-position-y: 50%;
 	.greeting-title {
 		position: relative;
 		margin-bottom: 20px;
