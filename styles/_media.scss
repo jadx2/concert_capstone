@@ -1,88 +1,96 @@
 @media (min-width: 768px) {
-	// Index
-	.fitting-container {
-		padding: 0 30px;
-		max-width: 900px;
-		margin: 0 auto;
-	}
-	.greeting {
-		.fitting-container {
-			.greeting-title {
-				font-size: 6rem;
-				width: 450px;
-				&::before {
-					font-size: 12px;
-				}
-			}
-			.festival-info {
-				width:  450px;
-			}
-		}
-	}
-	.main-program {
-	 	.fitting-container {
-			.section-title {
-				&::after {
-					left: 46%;
-				}
-			}
-			.program-items {
-				display: flex;
-				justify-content: space-between;
-				max-width: 700px;
-				margin: 0 auto;
-				.program-item {
-					flex-direction: column;
-					justify-content: center;
-					max-width: 130px;
-					text-align: center;
-				}
-			}
-		}
-	}
-	.featured-artists {
-		.fitting-container {
-			.section-title {
-				&::after {
-					left: 46%;
-				}
-			}
-			.artists-container {
-				max-width: 700px;
-				margin: 0 auto;
-			}
-		}
-	}
-	.partners {
-		.fitting-container {
-			.section-title {
-				&::after {
-					left: 48%;
-				}
-			}
-		}
-	}
+  // Index
+  .fitting-container {
+    padding: 0 30px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
 
-	// About
-	
-	.intro {
-		.fitting-container {
-			width: 500px;
-		}
-	}
-	.gallery,
-	.videos {
-		.section-title {
-			&::after{
-				left: 45%;
-			}
-		}
-	}
-	
-.pics-container,
-.videos-container {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
-}
+  .greeting {
+    .fitting-container {
+      .greeting-title {
+        font-size: 6rem;
+        width: 450px;
+
+        &::before {
+          font-size: 12px;
+        }
+      }
+
+      .festival-info {
+        width: 450px;
+      }
+    }
+  }
+
+  .gallery,
+  .videos {
+    .section-title {
+      &::after {
+        left: 45%;
+      }
+    }
+  }
+
+  .main-program {
+    .fitting-container {
+      .section-title {
+        &::after {
+          left: 46%;
+        }
+      }
+
+      .program-items {
+        display: flex;
+        justify-content: space-between;
+        max-width: 700px;
+        margin: 0 auto;
+
+        .program-item {
+          flex-direction: column;
+          justify-content: center;
+          max-width: 130px;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .featured-artists {
+    .fitting-container {
+      .section-title {
+        &::after {
+          left: 46%;
+        }
+      }
+
+      .artists-container {
+        max-width: 700px;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .partners {
+    .fitting-container {
+      .section-title {
+        &::after {
+          left: 48%;
+        }
+      }
+    }
+  }
+
+  .intro .intro {
+    .fitting-container {
+      width: 500px;
+    }
+  }
+
+  .pics-container,
+  .videos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
 }

@@ -1,16 +1,17 @@
 @import "variables";
 
 .section-title {
-	position: relative;
-	color: $white;
-	&::after {
-		content: "";
-		background: $orange;
-		width: 60px;
-		display: block;
-		height: 2px;
-		position: absolute;
-		bottom: -10px;
-		left: 40%;
-	}
+  position: relative;
+  color: $white;
+
+  &::after {
+    content: "";
+    background: $orange;
+    width: 60px;
+    display: block;
+    height: 2px;
+    position: absolute;
+    bottom: -10px;
+    left: 40%;
+  }
 }

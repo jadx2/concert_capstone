@@ -2,21 +2,24 @@
 @import "section-title";
 
 .partners {
-	background-color: $black;
-	padding: 20px;
-	.section-title {
-		&::after {
-			width: 30px;
-			left: 46%;
-		}
-	}
-	.partners-container {
-		display: flex;
-		justify-content: space-around;
-		flex-wrap: wrap;
-		padding-top: 30px;
-		.partner {
-			width: 130px;
-		}
-	}
+  background-color: $black;
+  padding: 20px;
+
+  .section-title {
+    &::after {
+      width: 30px;
+      left: 46%;
+    }
+  }
+
+  .partners-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 30px;
+
+    .partner {
+      width: 130px;
+    }
+  }
 }

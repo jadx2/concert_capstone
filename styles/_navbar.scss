@@ -1,67 +1,76 @@
 @import "variables";
 
 .mobile-navbar {
-	margin-bottom: 5px;
-	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-	.fa-bars {
-		font-size: 30px;
-		padding: 20px;
-	}
+  margin-bottom: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+
+  .fa-bars {
+    font-size: 30px;
+    padding: 20px;
+  }
 }
 
 .desktop-navbar {
-	margin-bottom: 5px;
-	.top-navbar {
-		background-color: $black;
-		padding: 5px 30px ;
-		.social-links {
-			display: flex;
-			justify-content: end;
-			max-width: 900px;
-			margin: 0 auto;
-			.social-link {
-				margin-left: 18px;
-				font-size: 16px;
-				a {
-					color: $white;
-				}
-			} 
-		}
-	}
-	.bottom-navbar {
-		box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-		padding: 8px  30px;
-		.container-nav {
-			max-width: 900px;
-			margin: auto;
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-			.top-logo {
-				display: inline-block;
-				width: 70px;
-				img {
-					height: auto;
-				}
-			}
-			.nav-links {
-				display: flex;
-				justify-content: space-between;
-				font-size: 16px;
-				.to-tickets {
-					border: 3px solid $orange;
-					a {
-						color: $orange;
-					}
-				}
-			}
-		}
-	}
-	.active {
-		color: $orange;
-	}
-}
+  margin-bottom: 5px;
 
-@media (min-width: 1200px) {
+  .top-navbar {
+    background-color: $black;
+    padding: 5px 30px;
 
+    .social-links {
+      display: flex;
+      justify-content: end;
+      max-width: 900px;
+      margin: 0 auto;
+
+      .social-link {
+        margin-left: 18px;
+        font-size: 16px;
+
+        a {
+          color: $white;
+        }
+      }
+    }
+  }
+
+  .bottom-navbar {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    padding: 8px 30px;
+
+    .container-nav {
+      max-width: 900px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .top-logo {
+        display: inline-block;
+        width: 70px;
+
+        img {
+          height: auto;
+        }
+      }
+
+      .nav-links {
+        display: flex;
+        justify-content: space-between;
+        font-size: 16px;
+
+        .to-tickets {
+          border: 3px solid $orange;
+
+          a {
+            color: $orange;
+          }
+        }
+      }
+    }
+  }
+
+  .active {
+    color: $orange;
+  }
 }

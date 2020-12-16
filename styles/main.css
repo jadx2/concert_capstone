@@ -28,7 +28,7 @@ html {
 }
 
 body {
-  font-family: Lato;
+  font-family: Lato, sans-serif;
   font-size: 1rem;
   color: #272a31;
 }
@@ -96,6 +96,11 @@ img {
     width: 450px;
   }
 
+  .gallery .section-title::after,
+.videos .section-title::after {
+    left: 45%;
+  }
+
   .main-program .fitting-container .section-title::after {
     left: 46%;
   }
@@ -124,13 +129,8 @@ img {
     left: 48%;
   }
 
-  .intro .fitting-container {
+  .intro .intro .fitting-container {
     width: 500px;
-  }
-
-  .gallery .section-title::after,
-.videos .section-title::after {
-    left: 45%;
   }
 
   .pics-container,
@@ -142,7 +142,7 @@ img {
 }
 .mobile-navbar {
   margin-bottom: 5px;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 .mobile-navbar .fa-bars {
   font-size: 30px;
@@ -170,7 +170,7 @@ img {
   color: #fff;
 }
 .desktop-navbar .bottom-navbar {
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   padding: 8px 30px;
 }
 .desktop-navbar .bottom-navbar .container-nav {
