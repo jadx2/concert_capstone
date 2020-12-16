@@ -8,10 +8,15 @@
   text-align: center;
   font-size: 14px;
 
+	.about-title {
+		margin-bottom: 20px;
+	}
+
   .about-info {
     background-color: $grey-beta;
     border: 3px solid $white;
-    margin-bottom: 10px;
+		max-width: 500px;
+    margin: 0 auto 20px auto;
   }
 
   .contact {

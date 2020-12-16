@@ -116,6 +116,9 @@ img {
     max-width: 130px;
     text-align: center;
   }
+  .main-program .fitting-container .program-items .program-item .item-img {
+    margin: 0;
+  }
 
   .featured-artists .fitting-container .section-title::after {
     left: 46%;
@@ -273,7 +276,7 @@ img {
   padding: 40px 20px 80px 20px;
   background-image: url(../assets/images/backgrounds/crowd.jpg);
   background-size: cover;
-  background-position-y: 50%;
+  background-position-y: 60%;
 }
 .greeting .greeting-title {
   position: relative;
@@ -318,16 +321,19 @@ img {
   padding: 20px;
   margin-bottom: 10px;
   background-color: rgba(211, 211, 211, 0.1);
+  font-size: 14px;
 }
 .main-program .program-items .program-item .item-title {
   padding: 0;
   color: #ec5242;
   font-weight: bold;
+  width: 80px;
 }
 .main-program .program-items .program-item .item-img {
   padding: 0;
   width: 35px;
   display: flex;
+  margin-right: 20px;
 }
 .main-program .program-items .program-item .item-img img {
   filter: invert(100%);
@@ -372,6 +378,7 @@ img {
 .featured-artists .artists-container .artist-card .card-body {
   padding: 5px 10px;
   width: 200px;
+  font-size: 14px;
 }
 .featured-artists .artists-container .artist-card .card-body .artist-name {
   font-weight: bold;
@@ -381,7 +388,7 @@ img {
   position: relative;
   color: #ec5242;
   font-style: italic;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 }
 .featured-artists .artists-container .artist-card .card-body .artist-info::before {
   content: "";
@@ -408,10 +415,14 @@ img {
   text-align: center;
   font-size: 14px;
 }
+.intro .about-title {
+  margin-bottom: 20px;
+}
 .intro .about-info {
   background-color: rgba(211, 211, 211, 0.9);
   border: 3px solid #fff;
-  margin-bottom: 10px;
+  max-width: 500px;
+  margin: 0 auto 20px auto;
 }
 .intro .contact {
   color: #fff;

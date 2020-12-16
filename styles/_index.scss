@@ -4,7 +4,7 @@
   padding: 40px 20px 80px 20px;
   background-image: url(../assets/images/backgrounds/crowd.jpg);
   background-size: cover;
-  background-position-y: 50%;
+  background-position-y: 60%;
 
   .greeting-title {
     position: relative;
@@ -54,17 +54,20 @@
       padding: 20px;
       margin-bottom: 10px;
       background-color: $grey-alpha;
+			font-size: 14px;
 
       .item-title {
         padding: 0;
         color: $orange;
         font-weight: bold;
+				width: 80px;
       }
 
       .item-img {
         padding: 0;
         width: 35px;
         display: flex;
+				margin-right: 20px;
 
         img {
           filter: invert(100%);
@@ -117,7 +120,8 @@
 
       .card-body {
         padding: 5px 10px;
-        width: 200px;
+				width: 200px;
+				font-size: 14px;
 
         .artist-name {
           font-weight: bold;
@@ -128,7 +132,7 @@
           position: relative;
           color: $orange;
           font-style: italic;
-          margin-bottom: 25px;
+          margin-bottom: 10px;
 
           &::before {
             content: "";
