@@ -54,20 +54,20 @@
       padding: 20px;
       margin-bottom: 10px;
       background-color: $grey-alpha;
-			font-size: 14px;
+      font-size: 14px;
 
       .item-title {
         padding: 0;
         color: $orange;
         font-weight: bold;
-				width: 80px;
+        width: 80px;
       }
 
       .item-img {
         padding: 0;
         width: 35px;
         display: flex;
-				margin-right: 20px;
+        margin-right: 20px;
 
         img {
           filter: invert(100%);
@@ -120,8 +120,8 @@
 
       .card-body {
         padding: 5px 10px;
-				width: 200px;
-				font-size: 14px;
+        width: 200px;
+        font-size: 14px;
 
         .artist-name {
           font-weight: bold;
