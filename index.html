@@ -21,240 +21,251 @@
     <title>Sunset Festival</title>
   </head>
   <body>
-    <!-- Mobile Navbar -->
-    <header class="container-fluid mobile-navbar d-md-none">
-      <nav><i class="fas fa-bars"></i></nav>
-    </header>
-    <!-- Desktop Navbar -->
-    <header class="container-fluid d-none d-md-block">
-      <nav>
-        <div>
-          <ul>
-            <li>
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <div class="container-fluid">
+      <!-- Mobile Navbar -->
+      <header class="d-md-none">
+        <nav class="mobile-navbar"><i class="fas fa-bars"></i></nav>
+      </header>
+      <!-- Desktop Navbar -->
+      <header class="d-none d-md-block">
+        <nav class="desktop-navbar">
+          <div class="top-navbar">
+            <ul class="social-links">
+              <li class="social-link">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li class="social-link">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li class="social-link"><a href="#">English</a></li>
+              <li class="social-link"><a href="#">My Account</a></li>
+              <li class="social-link"><a href="#">Logout</a></li>
+            </ul>
+          </div>
+          <div class="bottom-navbar">
+            <div class="container-nav">
+              <a class="top-logo" href="index.html">
+                <img src="assets/images/sunset.png" alt="Sunset Logo" />
+              </a>
+              <ul class="nav-links">
+                <li class="nav-link">
+                  <a target="_self" href="about.html">About</a>
+                </li>
+                <li class="nav-link"><a href="#">Program</a></li>
+                <li class="nav-link"><a href="#">Join</a></li>
+                <li class="nav-link"><a href="#">Sponsors</a></li>
+                <li class="nav-link"><a href="#">News</a></li>
+                <li class="nav-link to-tickets">
+                  <a href="tickets.html">Buy Tickets!</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- Main -->
+      <main class="main">
+        <!-- Greeting -->
+        <section class="greeting">
+          <div class="fitting-container">
+            <h1 class="greeting-title">Sunset Music festival 2021</h1>
+            <div>
+              <p class="festival-info">
+                Sunset 10th edition concert brings you the best summer festival
+                for the whole family. Come and enjoy a day full of music and
+                entertainment.
+              </p>
+            </div>
+            <div>
+              <h2 class="date">2021.03.20(SAT)</h2>
+              <p class="address">@Parque de la Exposición</p>
+            </div>
+          </div>
+        </section>
+        <!-- Main Program -->
+        <section class="main-program">
+          <h3 class="section-title">Main Program</h3>
+          <ul class="program-items">
+            <li class="program-item">
+              <figure class="item-img">
+                <img src="assets/images/icons/010-stage.svg" alt="Stage" />
+              </figure>
+              <h4 class="item-title">Dance</h4>
+              <p>
+                Contemporany dance show presenting the best crews in the city.
+              </p>
             </li>
-            <li>
-              <a href="#"><i class="fab fa-twitter"></i></a>
+            <li class="program-item">
+              <figure class="item-img">
+                <img src="assets/images/icons/013-hot-dog.svg" alt="Food" />
+              </figure>
+              <h4 class="item-title">Food</h4>
+              <p>
+                Enjoy the best of our gastronomy by the most popular chef in the
+                sector
+              </p>
+            </li>
+            <li class="program-item">
+              <figure class="item-img">
+                <img src="assets/images/icons/006-tent.svg" alt="Tent" />
+              </figure>
+              <h4 class="item-title">Games</h4>
+              <p>Great games for the whole family</p>
+            </li>
+            <li class="program-item">
+              <figure class="item-img">
+                <img src="assets/images/icons/025-drumstick.svg" alt="Bands" />
+              </figure>
+              <h4 class="item-title">Fight of bands</h4>
+              <p>
+                Prepare for the most anticipated fight of bands live showing
+                their best repertoir
+              </p>
+            </li>
+            <li class="program-item">
+              <figure class="item-img">
+                <img
+                  src="assets/images/icons/002-microphone.svg"
+                  alt="Concerts"
+                />
+              </figure>
+              <h4 class="item-title">Concerts</h4>
+              <p>
+                Performance of the most popular local and independent bands.
+              </p>
             </li>
           </ul>
-          <ul>
-            <li><a href="#">English</a></li>
-            <li><a href="#">My Account</a></li>
-            <li><a href="#">Logout</a></li>
+          <div class="btn-container">
+            <a class="get-tickets" href="tickets.html">Get yout tickes here</a>
+          </div>
+        </section>
+        <!-- Featured Artists -->
+        <section class="featured-artists">
+          <h3 class="section-title">Featured Artists</h3>
+          <ul class="artists-container row">
+            <li class="artist-card col-md-6">
+              <figure class="artist-pic">
+                <div class="img-before"></div>
+                <img src="assets/images/pics/daniel.jpg" alt="Daniel F" />
+              </figure>
+              <div class="card-body">
+                <h4 class="artist-name">Daniel F</h4>
+                <p class="artist-info">
+                  One of the most reknowned peruvian songwriters
+                </p>
+                <p class="artist-merit">Founder of the band Leuzemia</p>
+              </div>
+            </li>
+            <li class="artist-card col-md-6">
+              <figure class="artist-pic">
+                <div class="img-before"></div>
+                <img src="assets/images/pics/daniel.jpg" alt="Daniel F" />
+              </figure>
+              <div href="#" class="card-body">
+                <h4 class="artist-name">Daniel F</h4>
+                <p class="artist-info">
+                  One of the most reknowned peruvian songwriters
+                </p>
+                <p class="artist-merit">Founder of the band Leuzemia</p>
+              </div>
+            </li>
+            <li class="artist-card col-md-6 d-none d-md-flex">
+              <figure class="artist-pic">
+                <div class="img-before"></div>
+                <img src="assets/images/pics/daniel.jpg" alt="Daniel F" />
+              </figure>
+              <div href="#" class="card-body">
+                <h4 class="artist-name">Daniel F</h4>
+                <p class="artist-info">
+                  One of the most reknowned peruvian songwriters
+                </p>
+                <p class="artist-merit">Founder of the band Leuzemia</p>
+              </div>
+            </li>
+            <li class="artist-card col-md-6 d-none d-md-flex">
+              <figure class="artist-pic">
+                <div class="img-before"></div>
+                <img src="assets/images/pics/daniel.jpg" alt="Daniel F" />
+              </figure>
+              <div class="card-body">
+                <h4 class="artist-name">Daniel F</h4>
+                <p class="artist-info">
+                  One of the most reknowned peruvian songwriters
+                </p>
+                <p class="artist-merit">Founder of the band Leuzemia</p>
+              </div>
+            </li>
+            <li class="artist-card col-md-6 d-none d-md-flex">
+              <figure class="artist-pic">
+                <div class="img-before"></div>
+                <img src="assets/images/pics/daniel.jpg" alt="Daniel F" />
+              </figure>
+              <div class="card-body">
+                <h4 class="artist-name">Daniel F</h4>
+                <p class="artist-info">
+                  One of the most reknowned peruvian songwriters
+                </p>
+                <p class="artist-merit">Founder of the band Leuzemia</p>
+              </div>
+            </li>
+            <li class="artist-card col-md-6 d-none d-md-flex">
+              <figure class="artist-pic">
+                <div class="img-before"></div>
+                <img src="assets/images/pics/daniel.jpg" alt="Daniel F" />
+              </figure>
+              <div class="card-body">
+                <h4 class="artist-name">Daniel F</h4>
+                <p class="artist-info">
+                  One of the most reknowned peruvian songwriters
+                </p>
+                <p class="artist-merit">Founder of the band Leuzemia</p>
+              </div>
+            </li>
           </ul>
-        </div>
-        <div>
-          <a href="index.html">
-            <img src="assets/images/Sunset.png" alt="Sunset Logo" />
-          </a>
-          <ul>
-            <li><a target="_self" href="about.html">About</a></li>
-            <li><a href="#">Program</a></li>
-            <li><a href="#">Join</a></li>
-            <li><a href="#">Sponsors</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="tickets.html">Buy Tickets!</a></li>
+          <div class="btn-container more">
+            <a href="#">More</a>
+          </div>
+        </section>
+        <section class="partners">
+          <h3 class="section-title">Partners</h3>
+          <ul class="partners-container">
+            <li class="partner">
+              <img
+                src="assets/images/icons/coca-cola-logo-transparent-background-11.png"
+                alt="Coca Cola"
+              />
+            </li>
+            <li class="partner">
+              <img
+                src="assets/images/icons/logo-airbnb-404px-grey-1.webp"
+                alt="Airbnb"
+              />
+            </li>
+            <li class="partner">
+              <img
+                src="assets/images/icons/Google-logo-grey.png"
+                alt="Google"
+              />
+            </li>
           </ul>
-        </div>
-      </nav>
-    </header>
-    <!-- Main -->
-    <main class="container-fluid">
-      <!-- Greeting -->
-      <section class="greeting">
-        <div>
-          <h1 class="greeting-title">Sunset Music festival 2021</h1>
-        </div>
-        <div>
-          <p class="festival-info">
-            Sunset 10th edition concert brings you the best summer festival for
-            the whole family. Come and enjoy a day full of music and
-            entertainment.
+        </section>
+      </main>
+      <!-- Footer -->
+      <Footer class="footer">
+        <a class="logo" href="index.html">
+          <img src="assets/images/sunset.png" alt="Sunset Logo" />
+        </a>
+        <div class="aknowledgement">
+          <p class="year">©2020 Some Rights Reserved</p>
+          <p class="cindy">
+            Design based on
+            <a
+              href="https://www.behance.net/gallery/29845175/CC-Global-Summit-2015"
+              >Cindy Shin</a
+            >'s design.
           </p>
         </div>
-        <div>
-          <h2 class="date">2021.03.20(SAT)</h2>
-          <p class="address">@Parque de la Exposición</p>
-        </div>
-      </section>
-      <!-- Main Program -->
-      <section class="main-program">
-        <h3 class="main-program-title">Main Program</h3>
-        <ul class="program-items">
-          <li class="program-item">
-            <figure class="item-img">
-              <img src="assets/images/icons/010-stage.svg" alt="Stage" />
-            </figure>
-            <h4 class="item-title">Dance</h4>
-            <p>
-              Contemporany dance show presenting the best crews in the city.
-            </p>
-          </li>
-          <li class="program-item">
-            <figure class="item-img">
-              <img src="assets/images/icons/013-hot dog.svg" alt="Food" />
-            </figure>
-            <h4 class="item-title">Food</h4>
-            <p>
-              Enjoy the best of our gastronomy by the most popular chef in the
-              sector
-            </p>
-          </li>
-          <li class="program-item">
-            <figure class="item-img">
-              <img src="assets/images/icons/006-tent.svg" alt="Tent" />
-            </figure>
-            <h4 class="item-title">Games</h4>
-            <p>Great games for the whole family</p>
-          </li>
-          <li class="program-item">
-            <figure class="item-img">
-              <img src="assets/images/icons/025-drumstick.svg" alt="Bands" />
-            </figure>
-            <h4 class="item-title">Fight of bands</h4>
-            <p>
-              Prepare for the most anticipated fight of bands live showing their
-              best repertoir
-            </p>
-          </li>
-          <li class="program-item">
-            <figure class="item-img">
-              <img
-                src="assets/images/icons/002-microphone.svg"
-                alt="Concerts"
-              />
-            </figure>
-            <h4 class="item-title">Concerts</h4>
-            <p>Performance of the most popular local and independent bands.</p>
-          </li>
-        </ul>
-        <div href="#" class="btn-container">
-          <a class="get-tickets" href="tickets.html">Get yout tickes here</a>
-        </div>
-      </section>
-      <!-- Featured Artists -->
-      <section class="featured-artists">
-        <h3 class="featured-artists-title">Featured Artists</h3>
-        <ul class="artists-container row">
-          <li class="artist-card col-md-6">
-            <figure class="artist-pic">
-              <div class="img-before"></div>
-              <img src="assets/images/pics/daniel.jpg" alt="Daniel F" />
-            </figure>
-            <div href="#" class="card-body">
-              <h4 class="artist-name">Daniel F</h4>
-              <p class="artist-info">
-                One of the most reknowned peruvian songwriters
-              </p>
-              <p class="artist-merit">Founder of the band Leuzemia</p>
-            </div>
-          </li>
-          <li class="artist-card col-md-6">
-            <figure class="artist-pic">
-              <div class="img-before"></div>
-              <img src="assets/images/pics/daniel.jpg" alt="Daniel F" />
-            </figure>
-            <div href="#" class="card-body">
-              <h4 class="artist-name">Daniel F</h4>
-              <p class="artist-info">
-                One of the most reknowned peruvian songwriters
-              </p>
-              <p class="artist-merit">Founder of the band Leuzemia</p>
-            </div>
-          </li>
-          <li class="artist-card col-md-6 d-none d-md-flex">
-            <figure class="artist-pic">
-              <div class="img-before"></div>
-              <img src="assets/images/pics/daniel.jpg" alt="Daniel F" />
-            </figure>
-            <div href="#" class="card-body">
-              <h4 class="artist-name">Daniel F</h4>
-              <p class="artist-info">
-                One of the most reknowned peruvian songwriters
-              </p>
-              <p class="artist-merit">Founder of the band Leuzemia</p>
-            </div>
-          </li>
-          <li class="artist-card col-md-6 d-none d-md-flex">
-            <figure class="artist-pic">
-              <div class="img-before"></div>
-              <img src="assets/images/pics/daniel.jpg" alt="Daniel F" />
-            </figure>
-            <div href="#" class="card-body">
-              <h4 class="artist-name">Daniel F</h4>
-              <p class="artist-info">
-                One of the most reknowned peruvian songwriters
-              </p>
-              <p class="artist-merit">Founder of the band Leuzemia</p>
-            </div>
-          </li>
-          <li class="artist-card col-md-6 d-none d-md-flex">
-            <figure class="artist-pic">
-              <div class="img-before"></div>
-              <img src="assets/images/pics/daniel.jpg" alt="Daniel F" />
-            </figure>
-            <div href="#" class="card-body">
-              <h4 class="artist-name">Daniel F</h4>
-              <p class="artist-info">
-                One of the most reknowned peruvian songwriters
-              </p>
-              <p class="artist-merit">Founder of the band Leuzemia</p>
-            </div>
-          </li>
-          <li class="artist-card col-md-6 d-none d-md-flex">
-            <figure class="artist-pic">
-              <div class="img-before"></div>
-              <img src="assets/images/pics/daniel.jpg" alt="Daniel F" />
-            </figure>
-            <div href="#" class="card-body">
-              <h4 class="artist-name">Daniel F</h4>
-              <p class="artist-info">
-                One of the most reknowned peruvian songwriters
-              </p>
-              <p class="artist-merit">Founder of the band Leuzemia</p>
-            </div>
-          </li>
-        </ul>
-        <div href="#" class="btn-container more">
-          <a href="#">More</a>
-        </div>
-      </section>
-      <section class="partners">
-        <h3>Partner</h3>
-        <ul>
-          <li>
-            <img
-              src="assets/images/icons/coca-cola-logo-transparent-background-11.png"
-              alt="Coca Cola"
-            />
-          </li>
-          <li>
-            <img
-              src="assets/images/icons/logo-airbnb-404px-grey-1.webp"
-              alt="Airbnb"
-            />
-          </li>
-          <li>
-            <img src="assets/images/icons/Google-logo-grey.png" alt="Google" />
-          </li>
-        </ul>
-      </section>
-    </main>
-    <!-- Footer -->
-    <Footer class="container-fluid">
-      <a href="index.html">
-        <img src="assets/images/Sunset.png" alt="Sunset Logo" />
-      </a>
-      <div>
-        <p>©2020 Some Rights Reserved</p>
-        <p>
-          Design based on
-          <a
-            href="https://www.behance.net/gallery/29845175/CC-Global-Summit-2015"
-            >Cindy Shin</a
-          >'s design.
-        </p>
-      </div>
-    </Footer>
+      </Footer>
+    </div>
   </body>
 </html>

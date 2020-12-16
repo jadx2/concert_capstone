@@ -1,16 +1,18 @@
 @import "variables";
 @import "fonts";
+@import "section-title";
+@import "partners";
+@import "footer";
 
 .greeting {
-	padding: 20px 20px 80px 20px;
+	padding: 40px 20px 80px 20px;
 	background-image: url(../assets/images/backgrounds/crowd.jpg);
 	background-size: cover;
 	.greeting-title {
 		position: relative;
-		font-family: Lato;
 		margin-bottom: 20px;
 		&::before {
-			content: "Creative Productions Present:";
+			content: "Creative Productions Presents:";
 			position: absolute;
 			top: -6px;
 			left: 6px;
@@ -42,20 +44,6 @@
 	background-image: url(../assets/images/backgrounds/blackbg.jpg);
 	background-color: $black;
 	padding: 20px 10px;
-	.main-program-title {
-		position: relative;
-		color: $white;
-		&::after {
-			content: "";
-			background: $orange;
-			width: 60px;
-			display: block;
-			height: 2px;
-			position: absolute;
-			bottom: -10px;
-			left: 40%;
-		}
-	}
 	.program-items {
 		color: $white;
 		padding: 30px 0;
@@ -89,21 +77,10 @@
 		}
 }
 
-
 .featured-artists {
 	padding: 20px 10px;
-	.featured-artists-title {
-		position: relative;
-		&::after {
-			content: "";
-			background: $orange;
-			width: 60px;
-			display: block;
-			height: 2px;
-			position: absolute;
-			bottom: -10px;
-			left: 40%;
-		}
+	.section-title {
+		color: $black;
 	}
 	.artists-container {
 		padding: 30px 0;
@@ -159,3 +136,10 @@
 	}
 }
 
+@media (min-width: 768px) {
+	.fitting-container {
+		padding: 0 30px;
+		max-width: 900px;
+		margin: 0 auto;
+	}
+}

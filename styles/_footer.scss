@@ -1,0 +1,19 @@
+@import "variables";
+
+.footer {
+	padding: 20px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	.logo {
+		display: inline-block;
+		width: 60px;
+	}
+	.aknowledgement {
+		.cindy {
+			a {
+				color: $orange;
+			}
+		}
+	}
+}

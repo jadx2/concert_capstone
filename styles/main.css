@@ -48,6 +48,7 @@ h2,
 h3,
 h4,
 p,
+ul,
 figure {
   margin: 0;
   padding: 0;
@@ -76,9 +77,77 @@ img {
   margin-bottom: 25px;
 }
 
-.fa-bars {
+.mobile-navbar {
+  margin-bottom: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+.mobile-navbar .fa-bars {
   font-size: 30px;
   padding: 20px;
+}
+
+.desktop-navbar {
+  margin-bottom: 5px;
+}
+.desktop-navbar .top-navbar {
+  background-color: #272a31;
+  padding: 5px 30px;
+}
+.desktop-navbar .top-navbar .social-links {
+  display: flex;
+  justify-content: end;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.desktop-navbar .top-navbar .social-links .social-link {
+  margin-left: 18px;
+  font-size: 16px;
+}
+.desktop-navbar .top-navbar .social-links .social-link a {
+  color: #fff;
+}
+.desktop-navbar .bottom-navbar {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  padding: 8px 30px;
+}
+.desktop-navbar .bottom-navbar .container-nav {
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.desktop-navbar .bottom-navbar .container-nav .top-logo {
+  display: inline-block;
+  width: 70px;
+}
+.desktop-navbar .bottom-navbar .container-nav .top-logo img {
+  height: auto;
+}
+.desktop-navbar .bottom-navbar .container-nav .nav-links {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+}
+.desktop-navbar .bottom-navbar .container-nav .nav-links .to-tickets {
+  border: 3px solid #ec5242;
+}
+.desktop-navbar .bottom-navbar .container-nav .nav-links .to-tickets a {
+  color: #ec5242;
+}
+
+.footer {
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.footer .logo {
+  display: inline-block;
+  width: 60px;
+}
+.footer .aknowledgement .cindy a {
+  color: #ec5242;
 }
 
 @font-face {
@@ -89,18 +158,79 @@ img {
   font-family: Cocogoose-italic;
   src: url("assets/fonts/Cocogoose-Italic.ttf");
 }
+.section-title {
+  position: relative;
+  color: #fff;
+}
+.section-title::after {
+  content: "";
+  background: #ec5242;
+  width: 60px;
+  display: block;
+  height: 2px;
+  position: absolute;
+  bottom: -10px;
+  left: 40%;
+}
+
+.section-title {
+  position: relative;
+  color: #fff;
+}
+.section-title::after {
+  content: "";
+  background: #ec5242;
+  width: 60px;
+  display: block;
+  height: 2px;
+  position: absolute;
+  bottom: -10px;
+  left: 40%;
+}
+
+.partners {
+  background-color: #272a31;
+  padding: 20px;
+}
+.partners .section-title::after {
+  width: 30px;
+  left: 46%;
+}
+.partners .partners-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-top: 30px;
+}
+.partners .partners-container .partner {
+  width: 130px;
+}
+
+.footer {
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.footer .logo {
+  display: inline-block;
+  width: 60px;
+}
+.footer .aknowledgement .cindy a {
+  color: #ec5242;
+}
+
 .greeting {
-  padding: 20px 20px 80px 20px;
+  padding: 40px 20px 80px 20px;
   background-image: url(../assets/images/backgrounds/crowd.jpg);
   background-size: cover;
 }
 .greeting .greeting-title {
   position: relative;
-  font-family: Lato;
   margin-bottom: 20px;
 }
 .greeting .greeting-title::before {
-  content: "Creative Productions Present:";
+  content: "Creative Productions Presents:";
   position: absolute;
   top: -6px;
   left: 6px;
@@ -127,20 +257,6 @@ img {
   background-image: url(../assets/images/backgrounds/blackbg.jpg);
   background-color: #272a31;
   padding: 20px 10px;
-}
-.main-program .main-program-title {
-  position: relative;
-  color: #fff;
-}
-.main-program .main-program-title::after {
-  content: "";
-  background: #ec5242;
-  width: 60px;
-  display: block;
-  height: 2px;
-  position: absolute;
-  bottom: -10px;
-  left: 40%;
 }
 .main-program .program-items {
   color: #fff;
@@ -177,18 +293,8 @@ img {
 .featured-artists {
   padding: 20px 10px;
 }
-.featured-artists .featured-artists-title {
-  position: relative;
-}
-.featured-artists .featured-artists-title::after {
-  content: "";
-  background: #ec5242;
-  width: 60px;
-  display: block;
-  height: 2px;
-  position: absolute;
-  bottom: -10px;
-  left: 40%;
+.featured-artists .section-title {
+  color: #272a31;
 }
 .featured-artists .artists-container {
   padding: 30px 0;
@@ -243,6 +349,13 @@ img {
   font-size: 15px;
 }
 
+@media (min-width: 768px) {
+  .fitting-container {
+    padding: 0 30px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+}
 .intro {
   padding: 0 20px;
 }
