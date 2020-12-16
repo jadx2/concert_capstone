@@ -57,6 +57,9 @@
 			}
 		}
 	}
+	.active {
+		color: $orange;
+	}
 }
 
 @media (min-width: 1200px) {

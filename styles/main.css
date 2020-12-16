@@ -57,6 +57,7 @@ h3 {
 a {
   color: #272a31;
   text-decoration: none;
+  display: inline-block;
 }
 a:hover {
   color: #272a31;
@@ -78,6 +79,12 @@ img {
 }
 
 @media (min-width: 768px) {
+  .fitting-container {
+    padding: 0 30px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
   .greeting .fitting-container .greeting-title {
     font-size: 6rem;
     width: 450px;
@@ -115,6 +122,22 @@ img {
 
   .partners .fitting-container .section-title::after {
     left: 48%;
+  }
+
+  .intro .fitting-container {
+    width: 500px;
+  }
+
+  .gallery .section-title::after,
+.videos .section-title::after {
+    left: 45%;
+  }
+
+  .pics-container,
+.videos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
   }
 }
 .mobile-navbar {
@@ -173,6 +196,9 @@ img {
   border: 3px solid #ec5242;
 }
 .desktop-navbar .bottom-navbar .container-nav .nav-links .to-tickets a {
+  color: #ec5242;
+}
+.desktop-navbar .active {
   color: #ec5242;
 }
 
@@ -373,15 +399,61 @@ img {
   font-size: 15px;
 }
 
-@media (min-width: 768px) {
-  .fitting-container {
-    padding: 0 30px;
-    max-width: 900px;
-    margin: 0 auto;
-  }
-}
 .intro {
-  padding: 0 20px;
+  padding: 40px 20px 80px 20px;
+  background-image: url(../assets/images/backgrounds/crowd.jpg);
+  background-size: cover;
+  background-position-y: 50%;
+  text-align: center;
+  font-size: 14px;
+}
+.intro .about-info {
+  background-color: rgba(211, 211, 211, 0.9);
+  border: 3px solid #fff;
+  margin-bottom: 10px;
+}
+.intro .contact {
+  color: #fff;
+  font-weight: bold;
+}
+.intro .email {
+  color: #fff;
+  font-weight: bold;
+}
+
+.gallery {
+  background-color: #272a31;
+  background-image: url(../assets/images/backgrounds/blackbg.jpg);
+  padding: 40px 20px;
+}
+.gallery .pics-container {
+  padding: 30px 0;
+}
+.gallery .pics-container .pic {
+  margin-bottom: 10px;
+  border: 3px solid #fff;
+  width: 320px;
+  height: 190px;
+}
+.gallery .get-tickets {
+  color: white;
+  background-color: #ec5242;
+  padding: 16px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.videos {
+  padding: 40px 20px;
+}
+.videos .section-title {
+  color: #272a31;
+}
+.videos .videos-container {
+  padding: 30px 0;
+}
+.videos .videos-container .video {
+  margin-bottom: 10px;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,4 +1,10 @@
 @media (min-width: 768px) {
+	// Index
+	.fitting-container {
+		padding: 0 30px;
+		max-width: 900px;
+		margin: 0 auto;
+	}
 	.greeting {
 		.fitting-container {
 			.greeting-title {
@@ -56,4 +62,27 @@
 			}
 		}
 	}
+
+	// About
+	
+	.intro {
+		.fitting-container {
+			width: 500px;
+		}
+	}
+	.gallery,
+	.videos {
+		.section-title {
+			&::after{
+				left: 45%;
+			}
+		}
+	}
+	
+.pics-container,
+.videos-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
 }
