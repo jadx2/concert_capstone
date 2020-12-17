@@ -4,40 +4,40 @@
   margin-bottom: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 
-	.dropdown {
-		.dropdown-toggle {
-			padding: 20px;
+  .dropdown {
+    .dropdown-toggle {
+      padding: 20px;
 
-			.fa-bars {
-  		  font-size: 30px;
-  		}
+      .fa-bars {
+        font-size: 30px;
+      }
 
-			&::after {
-				content: "";
-				display: none;
-			}
-		}
+      &::after {
+        content: "";
+        display: none;
+      }
+    }
 
-		.dropdown-menu {
-			font-size: 14px;
-			text-align: center;
-			width: 120px;
+    .dropdown-menu {
+      font-size: 14px;
+      text-align: center;
+      width: 120px;
 
-			.mobile-nav-social {
-				padding: 10px;
+      .mobile-nav-social {
+        padding: 10px;
 
-				.fab  {
-					font-size: 20px;
-					color: $orange;
-				}
-			}
-		}
-	}
+        .fab {
+          font-size: 20px;
+          color: $orange;
+        }
+      }
+    }
+  }
 
-	.mobile-nav-logo {
+  .mobile-nav-logo {
     margin: 15px 20px;
     width: 50px;
-	}
+  }
 }
 
 .desktop-navbar {
