@@ -105,119 +105,216 @@
       </section>
       <section class="tickets-prices">
         <div class="fitting-container">
-          <table class="table table-striped">
-            <thead>
-              <tr>
-                <th scope="col">Zone</th>
-                <th scope="col">Price</th>
-                <th scope="col">N° Tickets</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>South</td>
-                <td>$50</td>
-                <td>
-                  <select
-                    class="form-select"
-                    aria-label="Default select example"
-                  >
-                    <option selected>0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                  </select>
-                </td>
-              </tr>
-              <tr>
-                <td>South</td>
-                <td>$50</td>
-                <td>
-                  <select
-                    class="form-select"
-                    aria-label="Default select example"
-                  >
-                    <option selected>0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                  </select>
-                </td>
-              </tr>
-              <tr>
-                <td>North</td>
-                <td>$30</td>
-                <td>
-                  <select
-                    class="form-select"
-                    aria-label="Default select example"
-                  >
-                    <option selected>0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                  </select>
-                </td>
-              </tr>
-              <tr>
-                <td>East</td>
-                <td>$100</td>
-                <td>
-                  <select
-                    class="form-select"
-                    aria-label="Default select example"
-                  >
-                    <option selected>0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                  </select>
-                </td>
-              </tr>
-              <tr>
-                <td>West</td>
-                <td>$100</td>
-                <td>
-                  <select
-                    class="form-select"
-                    aria-label="Default select example"
-                  >
-                    <option selected>0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                  </select>
-                </td>
-              </tr>
-              <tr>
-                <td>Middle</td>
-                <td>$150</td>
-                <td>
-                  <select
-                    class="form-select"
-                    aria-label="Default select example"
-                  >
-                    <option selected>0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                  </select>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="table-border">
+            <table class="table mb-0 text-center table-bordered">
+              <thead class="table-light">
+                <tr>
+                  <th scope="col">Zone</th>
+                  <th scope="col">1 Ticket</th>
+                  <th scope="col">2 Ticket</th>
+                  <th scope="col">3 Ticket</th>
+                  <th scope="col">4 Ticket</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="align-middle">South</td>
+                  <td>
+                    <p class="table-price">$50</p>
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="price"
+                      value="south-1"
+                    />
+                  </td>
+                  <td>
+                    <p class="table-price">$95</p>
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="price"
+                      value="south-2"
+                    />
+                  </td>
+                  <td>
+                    <p class="table-price">$140</p>
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="price"
+                      value="south-3"
+                    />
+                  </td>
+                  <td>
+                    <p class="table-price">$190</p>
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="price"
+                      value="south-4"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td class="align-middle">North</td>
+                  <td>
+                    <p class="table-price">$50</p>
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="price"
+                      value="south-1"
+                    />
+                  </td>
+                  <td>
+                    <p class="table-price">$95</p>
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="price"
+                      value="south-2"
+                    />
+                  </td>
+                  <td>
+                    <p class="table-price">$140</p>
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="price"
+                      value="south-3"
+                    />
+                  </td>
+                  <td>
+                    <p class="table-price">$190</p>
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="price"
+                      value="south-4"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td class="align-middle">East</td>
+                  <td>
+                    <p class="table-price">$70</p>
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="price"
+                      value="south-1"
+                    />
+                  </td>
+                  <td>
+                    <p class="table-price">$135</p>
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="price"
+                      value="south-2"
+                    />
+                  </td>
+                  <td>
+                    <p class="table-price">$200</p>
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="price"
+                      value="south-3"
+                    />
+                  </td>
+                  <td>
+                    <p class="table-price">$270</p>
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="price"
+                      value="south-4"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td class="align-middle">West</td>
+                  <td>
+                    <p class="table-price">$70</p>
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="price"
+                      value="south-1"
+                    />
+                  </td>
+                  <td>
+                    <p class="table-price">$135</p>
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="price"
+                      value="south-2"
+                    />
+                  </td>
+                  <td>
+                    <p class="table-price">$200</p>
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="price"
+                      value="south-3"
+                    />
+                  </td>
+                  <td>
+                    <p class="table-price">$270</p>
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="price"
+                      value="south-4"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td class="align-middle">Middle</td>
+                  <td>
+                    <p class="table-price">$90</p>
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="price"
+                      value="south-1"
+                    />
+                  </td>
+                  <td>
+                    <p class="table-price">$175</p>
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="price"
+                      value="south-2"
+                    />
+                  </td>
+                  <td>
+                    <p class="table-price">$260</p>
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="price"
+                      value="south-3"
+                    />
+                  </td>
+                  <td>
+                    <p class="table-price">$340</p>
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="price"
+                      value="south-4"
+                    />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
           <figure class="map">
             <img src="assets/images/pics/map.jpg" alt="Map" />
           </figure>

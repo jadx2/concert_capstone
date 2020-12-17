@@ -25,16 +25,25 @@
 .tickets-prices {
   padding: 40px 20px;
 
-  .table {
-    max-width: 500px;
-    border: 3px solid $orange;
-    margin: 0 auto 40px auto;
-    font-size: 14px;
+	.table-border {
+		 margin: 0 auto 40px auto;
+		 padding: 5px;
+		 max-width: 500px;
+		 background-image: repeating-linear-gradient(-45deg, $white, $white 5px, $orange 5px, $orange 10px, $white 10px, $white 15px, $blue 15px, $blue 20px);
+		 box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 
-    td {
-      width: 40px;
-    }
-  }
+		.table {
+			background-color: $white;
+  	  max-width: 500px;
+  	  font-size: 12px;
+
+			.table-price {
+				color: $orange;
+				font-weight: bold;
+				font-size: 14px;
+			}
+		}
+	}
 
   .map {
     margin: 0 auto 40px auto;
