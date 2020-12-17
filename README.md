@@ -8,7 +8,7 @@ All info used here is fictional.
 
 ![screenshot](./assets/images/screenshot.png)
 
-This project was build following [Cindy Shin's design.](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015)
+For this project SASS was used as the preprocessor to implement a modular workflow in the styling.
 
 ## Built With
 
@@ -31,8 +31,13 @@ This project was build following [Cindy Shin's design.](https://www.behance.net/
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](issues/).
+Feel free to check the [issues page](https://github.com/jadx2/concert_capstone/issues).
 
 ## Show your support
 
 Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+This project was build based on [Cindy Shin's design.](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015)
+
