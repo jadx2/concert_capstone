@@ -15,3 +15,14 @@
     left: 40%;
   }
 }
+
+.tickets-info {
+  border: 1px solid $grey;
+  width: 160px;
+  border-radius: 20px;
+  margin: 0 auto;
+
+   span {
+	   color: $orange;
+   }
+}

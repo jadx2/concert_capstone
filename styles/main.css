@@ -224,6 +224,16 @@ img {
   left: 40%;
 }
 
+.tickets-info {
+  border: 1px solid #d3d3d3;
+  width: 160px;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+.tickets-info span {
+  color: #ec5242;
+}
+
 .section-title {
   position: relative;
   color: #fff;
@@ -237,6 +247,16 @@ img {
   position: absolute;
   bottom: -10px;
   left: 40%;
+}
+
+.tickets-info {
+  border: 1px solid #d3d3d3;
+  width: 160px;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+.tickets-info span {
+  color: #ec5242;
 }
 
 .partners {
@@ -468,38 +488,28 @@ img {
   margin-bottom: 10px;
 }
 
-.tickets-header {
+.tickets-prices {
+  padding: 0 20px 40px 20px;
   background-color: rgba(211, 211, 211, 0.1);
+}
+.tickets-prices .tickets-header {
   text-align: center;
   padding: 40px 20px;
   font-size: 14px;
 }
-.tickets-header .tickets-title {
+.tickets-prices .tickets-header .tickets-title {
   margin-bottom: 20px;
-}
-.tickets-header .tickets-info {
-  border: 1px solid #d3d3d3;
-  width: 160px;
-  border-radius: 20px;
-  margin: 0 auto;
-}
-.tickets-header .tickets-info span {
-  color: #ec5242;
-}
-
-.tickets-prices {
-  padding: 40px 20px;
 }
 .tickets-prices .table-border {
   margin: 0 auto 40px auto;
   padding: 5px;
-  max-width: 500px;
+  max-width: 700px;
   background-image: repeating-linear-gradient(-45deg, #fff, #fff 5px, #ec5242 5px, #ec5242 10px, #fff 10px, #fff 15px, #192d60 15px, #192d60 20px);
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 .tickets-prices .table-border .table {
   background-color: #fff;
-  max-width: 500px;
+  width: 100%;
   font-size: 12px;
 }
 .tickets-prices .table-border .table .table-price {
@@ -511,7 +521,34 @@ img {
   margin: 0 auto 40px auto;
   max-width: 500px;
 }
-.tickets-prices .checkout {
+
+.cortesy {
+  padding: 0 20px 40px 20px;
+  font-size: 14px;
+}
+.cortesy .cortesy-header {
+  padding: 40px 20px;
+}
+.cortesy .cortesy-header .section-title {
+  color: #272a31;
+  margin-bottom: 30px;
+}
+.cortesy .cortesy-header .section-title::after {
+  left: 46%;
+}
+.cortesy .table {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  max-width: 700px;
+  margin: 0 auto 30px auto;
+}
+.cortesy .table .height {
+  height: 60px;
+  align-items: center;
+}
+.cortesy .table .form-check {
+  width: 65px;
+}
+.cortesy .checkout {
   color: white;
   background-color: #ec5242;
   padding: 16px;
