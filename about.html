@@ -23,13 +23,44 @@
   <body>
     <!-- Mobile Navbar -->
     <header class="d-md-none">
-      <nav class="mobile-navbar"><i class="fas fa-bars"></i></nav>
+      <nav class="mobile-navbar d-flex justify-content-between">
+        <div class="dropdown">
+          <a
+            href="#"
+            class="bg-white border-0 dropdown-toggle"
+            id="dropdownMenuButton"
+            data-bs-toggle="dropdown"
+          >
+            <i class="fas fa-bars"></i>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item" href="about.html">About</a></li>
+            <li><a class="dropdown-item" href="#">Program</a></li>
+            <li><a class="dropdown-item" href="#">Join</a></li>
+            <li><a class="dropdown-item" href="#">Sponsors</a></li>
+            <li><a class="dropdown-item" href="#">News</a></li>
+            <li><a class="dropdown-item" href="#">English</a></li>
+            <li><a class="dropdown-item" href="#">My Account</a></li>
+            <li><a class="dropdown-item" href="#">Logout</a></li>
+            <li>
+              <a class="dropdown-item" href="tickets.html">Buy Tickets</a>
+            </li>
+            <li class="mobile-nav-social d-flex justify-content-evenly">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+          </ul>
+        </div>
+        <a class="mobile-nav-logo" href="index.html">
+          <img src="assets/images/sunset.png" alt="Sunset Logo" />
+        </a>
+      </nav>
     </header>
     <!-- Desktop Navbar -->
     <header class="d-none d-md-block">
       <nav class="desktop-navbar">
         <div class="top-navbar">
-          <ul class="social-links">
+          <ul class="social-links d-flex justify-content-end">
             <li class="social-link">
               <a href="#"><i class="fab fa-facebook-f"></i></a>
             </li>
@@ -42,11 +73,13 @@
           </ul>
         </div>
         <div class="bottom-navbar">
-          <div class="container-nav">
+          <div
+            class="container-nav d-flex justify-content-between align-items-center"
+          >
             <a class="top-logo" href="index.html">
               <img src="assets/images/sunset.png" alt="Sunset Logo" />
             </a>
-            <ul class="nav-links">
+            <ul class="nav-links d-flex justify-content-between">
               <li class="nav-link">
                 <a class="active" target="_self" href="about.html">About</a>
               </li>
@@ -85,7 +118,9 @@
       <section class="gallery">
         <div class="fitting-container">
           <h3 class="section-title">Image Gallery</h3>
-          <div class="pics-container">
+          <div
+            class="pics-container d-md-flex flex-md-wrap justify-content-md-evenly"
+          >
             <figure class="pic">
               <img src="assets/images/pics/festival1.jpg" alt="Festival" />
             </figure>
@@ -113,7 +148,9 @@
       <section class="videos">
         <div class="fitting-container">
           <h3 class="section-title">Video Gallery</h3>
-          <div class="videos-container">
+          <div
+            class="videos-container d-md-flex flex-md-wrap justify-content-md-evenly"
+          >
             <figure class="video">
               <iframe
                 width="320"
@@ -193,5 +230,10 @@
         </div>
       </div>
     </Footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

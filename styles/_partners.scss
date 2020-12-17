@@ -19,7 +19,11 @@
     padding-top: 30px;
 
     .partner {
-      width: 130px;
+      width: 140px;
+			
+			img {
+				object-fit: fill;
+			}
     }
   }
 }

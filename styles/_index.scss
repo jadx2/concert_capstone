@@ -30,7 +30,6 @@
 
   .date {
     color: $white;
-    font-weight: bold;
   }
 
   .address {
@@ -49,8 +48,6 @@
     padding: 30px 0;
 
     .program-item {
-      display: flex;
-      align-items: center;
       padding: 20px;
       margin-bottom: 10px;
       background-color: $grey-alpha;
@@ -59,7 +56,6 @@
       .item-title {
         padding: 0;
         color: $orange;
-        font-weight: bold;
         width: 80px;
       }
 
@@ -81,7 +77,6 @@
     background-color: $orange;
     padding: 16px;
     font-size: 14px;
-    font-weight: bold;
   }
 }
 
@@ -96,7 +91,6 @@
     padding: 30px 0;
 
     .artist-card {
-      display: flex;
       margin-bottom: 20px;
 
       .artist-pic {
@@ -124,7 +118,6 @@
         font-size: 14px;
 
         .artist-name {
-          font-weight: bold;
           margin-bottom: 3px;
         }
 

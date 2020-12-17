@@ -27,7 +27,7 @@
   .videos {
     .section-title {
       &::after {
-        left: 45%;
+        left: 46%;
       }
     }
   }
@@ -41,14 +41,10 @@
       }
 
       .program-items {
-        display: flex;
-        justify-content: space-between;
         max-width: 700px;
         margin: 0 auto;
 
         .program-item {
-          flex-direction: column;
-          justify-content: center;
           max-width: 130px;
           text-align: center;
 
@@ -89,12 +85,5 @@
     .fitting-container {
       width: 500px;
     }
-  }
-
-  .pics-container,
-  .videos-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
   }
 }
