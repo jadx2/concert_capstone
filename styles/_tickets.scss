@@ -3,16 +3,16 @@
 .tickets-prices {
   padding: 0 20px 40px 20px;
   background-color: $grey-alpha;
-	
-	.tickets-header {
-	  text-align: center;
-	  padding: 40px 20px;
-	  font-size: 14px;
-	
-	  .tickets-title {
-	    margin-bottom: 20px;
-	  }
-	}
+
+  .tickets-header {
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 14px;
+
+    .tickets-title {
+      margin-bottom: 20px;
+    }
+  }
 
   .table-border {
     margin: 0 auto 40px auto;
@@ -53,35 +53,53 @@
 
 .cortesy {
   padding: 0 20px 40px 20px;
-	font-size: 14px;
+  font-size: 14px;
+  position: relative;
 
-	.cortesy-header {
-		padding: 40px 20px;
+  .divisor {
+    width: 40px;
+    height: 40px;
+    background-color: $orange;
+    transform: rotate(45deg);
+    position: absolute;
+    left: 44.5%;
+    top: -25px;
 
-		.section-title {
-			color: $black;
-			margin-bottom: 30px;
+    .divisor-content {
+      font-size: 24px;
+      color: $white;
+      font-weight: bold;
+      transform: rotate(45deg);
+    }
+  }
 
-			&::after {
-				left: 46%;
-			}
-		}
-	}
+  .cortesy-header {
+    padding: 40px 20px;
 
-	.table {
-		box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-		max-width: 700px;
-		margin: 0 auto 30px auto;
-		
-		.height {
-			height: 60px;
-			align-items: center;
-		}
+    .section-title {
+      color: $black;
+      margin-bottom: 30px;
 
-		.form-check {
-			width: 65px;
-		}
-	}
+      &::after {
+        left: 39%;
+      }
+    }
+  }
+
+  .ct-table {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+
+    .height {
+      height: 60px;
+      align-items: center;
+    }
+
+    .form-check {
+      width: 65px;
+    }
+  }
 
   .checkout {
     color: white;

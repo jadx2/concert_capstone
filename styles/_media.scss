@@ -81,9 +81,25 @@
     }
   }
 
-  .intro .intro {
+  .intro {
     .fitting-container {
       width: 500px;
+    }
+  }
+
+  .cortesy {
+    .fitting-container {
+      .divisor {
+        left: 48.5%;
+      }
+
+      .cortesy-header {
+        .section-title {
+          &::after {
+            left: 46%;
+          }
+        }
+      }
     }
   }
 }
