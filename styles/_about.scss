@@ -1,0 +1,72 @@
+@import "variables";
+
+.intro {
+  padding: 40px 20px 80px 20px;
+  background-image: url(../assets/images/backgrounds/crowd.jpg);
+  background-size: cover;
+  background-position-y: 50%;
+  text-align: center;
+  font-size: 14px;
+
+  .about-title {
+    margin-bottom: 20px;
+  }
+
+  .about-info {
+    background-color: $grey-beta;
+    border: 3px solid $white;
+    max-width: 500px;
+    margin: 0 auto 20px auto;
+  }
+
+  .contact {
+    color: $white;
+    font-weight: bold;
+  }
+
+  .email {
+    color: $white;
+    font-weight: bold;
+  }
+}
+
+.gallery {
+  background-color: $black;
+  background-image: url(../assets/images/backgrounds/blackbg.jpg);
+  padding: 40px 20px;
+
+  .pics-container {
+    padding: 30px 0;
+
+    .pic {
+      margin-bottom: 10px;
+      border: 3px solid $white;
+      width: 320px;
+      height: 190px;
+    }
+  }
+
+  .get-tickets {
+    color: white;
+    background-color: $orange;
+    padding: 16px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+}
+
+.videos {
+  padding: 40px 20px;
+
+  .section-title {
+    color: $black;
+  }
+
+  .videos-container {
+    padding: 30px 0;
+
+    .video {
+      margin-bottom: 10px;
+    }
+  }
+}

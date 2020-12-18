@@ -1,0 +1,110 @@
+@import "variables";
+
+.tickets-prices {
+  padding: 0 20px 40px 20px;
+  background-color: $grey-alpha;
+
+  .tickets-header {
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 14px;
+
+    .tickets-title {
+      margin-bottom: 20px;
+    }
+  }
+
+  .table-border {
+    margin: 0 auto 40px auto;
+    padding: 5px;
+    max-width: 700px;
+    background-image:
+      repeating-linear-gradient(
+        -45deg,
+        $white,
+        $white 5px,
+        $orange 5px,
+        $orange 10px,
+        $white 10px,
+        $white 15px,
+        $blue 15px,
+        $blue 20px
+      );
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+
+    .table {
+      background-color: $white;
+      width: 100%;
+      font-size: 12px;
+
+      .table-price {
+        color: $orange;
+        font-weight: bold;
+        font-size: 14px;
+      }
+    }
+  }
+
+  .map {
+    margin: 0 auto 40px auto;
+    max-width: 500px;
+  }
+}
+
+.cortesy {
+  padding: 0 20px 40px 20px;
+  font-size: 14px;
+  position: relative;
+
+  .divisor {
+    width: 40px;
+    height: 40px;
+    background-color: $orange;
+    transform: rotate(45deg);
+    position: absolute;
+    left: 44.5%;
+    top: -25px;
+
+    .divisor-content {
+      font-size: 24px;
+      color: $white;
+      font-weight: bold;
+      transform: rotate(45deg);
+    }
+  }
+
+  .cortesy-header {
+    padding: 40px 20px;
+
+    .section-title {
+      color: $black;
+      margin-bottom: 30px;
+
+      &::after {
+        left: 39%;
+      }
+    }
+  }
+
+  .ct-table {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+
+    .height {
+      height: 60px;
+      align-items: center;
+    }
+
+    .form-check {
+      width: 65px;
+    }
+  }
+
+  .checkout {
+    color: white;
+    background-color: #ec5242;
+    padding: 16px;
+    font-size: 14px;
+  }
+}

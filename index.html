@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato"
+    />
+    <script
+      src="https://kit.fontawesome.com/bffcdc15fc.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Sunset Festival</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <!-- Mobile Navbar -->
+      <header class="d-md-none">
+        <nav class="mobile-navbar d-flex justify-content-between">
+          <div class="dropdown">
+            <a
+              href="#"
+              class="bg-white border-0 dropdown-toggle"
+              id="dropdownMenuButton"
+              data-bs-toggle="dropdown"
+            >
+              <i class="fas fa-bars"></i>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <li><a class="dropdown-item" href="about.html">About</a></li>
+              <li><a class="dropdown-item" href="#">Program</a></li>
+              <li><a class="dropdown-item" href="#">Join</a></li>
+              <li><a class="dropdown-item" href="#">Sponsors</a></li>
+              <li><a class="dropdown-item" href="#">News</a></li>
+              <li><a class="dropdown-item" href="#">English</a></li>
+              <li><a class="dropdown-item" href="#">My Account</a></li>
+              <li><a class="dropdown-item" href="#">Logout</a></li>
+              <li>
+                <a class="dropdown-item" href="tickets.html">Buy Tickets</a>
+              </li>
+              <li class="mobile-nav-social d-flex justify-content-evenly">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </li>
+            </ul>
+          </div>
+          <a class="mobile-nav-logo" href="index.html">
+            <img src="assets/images/sunset.png" alt="Sunset Logo" />
+          </a>
+        </nav>
+      </header>
+      <!-- Desktop Navbar -->
+      <header class="d-none d-md-block">
+        <nav class="desktop-navbar">
+          <div class="top-navbar">
+            <ul class="social-links d-flex justify-content-end">
+              <li class="social-link">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li class="social-link">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li class="social-link"><a href="#">English</a></li>
+              <li class="social-link"><a href="#">My Account</a></li>
+              <li class="social-link"><a href="#">Logout</a></li>
+            </ul>
+          </div>
+          <div class="bottom-navbar">
+            <div
+              class="container-nav d-flex justify-content-between align-items-center"
+            >
+              <a class="top-logo" href="index.html">
+                <img src="assets/images/sunset.png" alt="Sunset Logo" />
+              </a>
+              <ul class="nav-links d-flex justify-content-between">
+                <li class="nav-link">
+                  <a target="_self" href="about.html">About</a>
+                </li>
+                <li class="nav-link"><a href="#">Program</a></li>
+                <li class="nav-link"><a href="#">Join</a></li>
+                <li class="nav-link"><a href="#">Sponsors</a></li>
+                <li class="nav-link"><a href="#">News</a></li>
+                <li class="nav-link to-tickets">
+                  <a href="tickets.html">Buy Tickets!</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- Main -->
+      <main class="main">
+        <!-- Greeting -->
+        <section class="greeting">
+          <div class="fitting-container">
+            <h1 class="greeting-title">Sunset Music festival 2021</h1>
+            <div>
+              <p class="festival-info">
+                Sunset 10th edition concert brings you the best summer festival
+                for the whole family. Come and enjoy a day full of music and
+                entertainment.
+              </p>
+            </div>
+            <div>
+              <h2 class="date fw-bold">2021.03.20(SAT)</h2>
+              <p class="address">@Parque de la Exposición</p>
+            </div>
+          </div>
+        </section>
+        <!-- Main Program -->
+        <section class="main-program">
+          <div class="fitting-container">
+            <h3 class="section-title">Main Program</h3>
+            <ul class="program-items d-md-flex justify-content-between">
+              <li class="program-item d-flex align-items-center flex-md-column">
+                <figure class="item-img">
+                  <img src="assets/images/icons/010-stage.svg" alt="Stage" />
+                </figure>
+                <h4 class="item-title fw-bold">Dance</h4>
+                <p>Modern dance show.</p>
+              </li>
+              <li class="program-item d-flex align-items-center flex-md-column">
+                <figure class="item-img">
+                  <img src="assets/images/icons/013-hot-dog.svg" alt="Food" />
+                </figure>
+                <h4 class="item-title fw-bold">Food</h4>
+                <p>Renowned chef and delicious food.</p>
+              </li>
+              <li class="program-item d-flex align-items-center flex-md-column">
+                <figure class="item-img">
+                  <img src="assets/images/icons/006-tent.svg" alt="Tent" />
+                </figure>
+                <h4 class="item-title fw-bold">Games</h4>
+                <p>Great games for the whole family.</p>
+              </li>
+              <li class="program-item d-flex align-items-center flex-md-column">
+                <figure class="item-img">
+                  <img
+                    src="assets/images/icons/025-drumstick.svg"
+                    alt="Bands"
+                  />
+                </figure>
+                <h4 class="item-title fw-bold">Kids bands</h4>
+                <p>The little ones show their musical side.</p>
+              </li>
+              <li class="program-item d-flex align-items-center flex-md-column">
+                <figure class="item-img">
+                  <img
+                    src="assets/images/icons/002-microphone.svg"
+                    alt="Concerts"
+                  />
+                </figure>
+                <h4 class="item-title fw-bold">Concerts</h4>
+                <p>Popular bands live.</p>
+              </li>
+            </ul>
+            <div class="btn-container">
+              <a class="get-tickets fw-bold" href="tickets.html"
+                >Get yout tickes here</a
+              >
+            </div>
+          </div>
+        </section>
+        <!-- Featured Artists -->
+        <section class="featured-artists">
+          <div class="fitting-container">
+            <h3 class="section-title">Featured Artists</h3>
+            <ul class="artists-container row">
+              <li class="artist-card d-flex col-md-6">
+                <figure class="artist-pic">
+                  <div class="img-before"></div>
+                  <img src="assets/images/pics/daniel.jpg" alt="Daniel F" />
+                </figure>
+                <div class="card-body">
+                  <h4 class="artist-name fw-bold">Daniel F</h4>
+                  <p class="artist-info">
+                    One of the most reknowned peruvian songwriters
+                  </p>
+                  <p class="artist-merit">Founder of Leuzemia</p>
+                </div>
+              </li>
+              <li class="artist-card d-flex col-md-6">
+                <figure class="artist-pic">
+                  <div class="img-before"></div>
+                  <img
+                    src="assets/images/pics/rafo-raez1.jpg"
+                    alt="Rafo Raez"
+                  />
+                </figure>
+                <div class="card-body">
+                  <h4 class="artist-name fw-bold">Rafo Raez</h4>
+                  <p class="artist-info">
+                    Famous singer and songwriter, a complete poet in music.
+                  </p>
+                  <p class="artist-merit">Founder of Los Paranoia</p>
+                </div>
+              </li>
+              <li class="artist-card d-flex col-md-6 d-none d-md-flex">
+                <figure class="artist-pic">
+                  <div class="img-before"></div>
+                  <img
+                    src="assets/images/pics/claudia.jpg"
+                    alt="Claudia Maurtua"
+                  />
+                </figure>
+                <div class="card-body">
+                  <h4 class="artist-name fw-bold">Claudia Maurtua</h4>
+                  <p class="artist-info">
+                    One of the hardest female voices currently
+                  </p>
+                  <p class="artist-merit">Founder of Nivoz Ni voto</p>
+                </div>
+              </li>
+              <li class="artist-card d-flex col-md-6 d-none d-md-flex">
+                <figure class="artist-pic">
+                  <div class="img-before"></div>
+                  <img
+                    src="assets/images/pics/marcelo.jpg"
+                    alt="Marcelo Motta"
+                  />
+                </figure>
+                <div class="card-body">
+                  <h4 class="artist-name fw-bold">Marcelo Motta</h4>
+                  <p class="artist-info">
+                    The peruvian blues man, a great frontman.
+                  </p>
+                  <p class="artist-merit">Founder of Amen</p>
+                </div>
+              </li>
+              <li class="artist-card d-flex col-md-6 d-none d-md-flex">
+                <figure class="artist-pic">
+                  <div class="img-before"></div>
+                  <img
+                    src="assets/images/pics/charlie.jpg"
+                    alt="Charlie Parra del Riego"
+                  />
+                </figure>
+                <div class="card-body">
+                  <h4 class="artist-name fw-bold">Charlie Parra del Riego</h4>
+                  <p class="artist-info">
+                    The famous guitarrist opened for Guns n Roses.
+                  </p>
+                  <p class="artist-merit">Founder of Difonia</p>
+                </div>
+              </li>
+              <li class="artist-card d-flex col-md-6 d-none d-md-flex">
+                <figure class="artist-pic">
+                  <div class="img-before"></div>
+                  <img
+                    src="assets/images/pics/ciccia.jpg"
+                    alt="Giovanni Ciccia"
+                  />
+                </figure>
+                <div class="card-body">
+                  <h4 class="artist-name fw-bold">Giovanni Ciccia</h4>
+                  <p class="artist-info">
+                    Famous actor and singer with many award earned.
+                  </p>
+                  <p class="artist-merit">Founder of Chabelos</p>
+                </div>
+              </li>
+            </ul>
+            <div class="btn-container more d-md-none">
+              <a href="#">More</a>
+            </div>
+          </div>
+        </section>
+        <section class="partners">
+          <div class="fitting-container">
+            <h3 class="section-title">Partners</h3>
+            <ul class="partners-container">
+              <li class="partner">
+                <img
+                  src="assets/images/icons/coca-cola-logo-transparent-background-11.png"
+                  alt="Coca Cola"
+                />
+              </li>
+              <li class="partner">
+                <img
+                  src="assets/images/icons/logo-airbnb-404px-grey-1.webp"
+                  alt="Airbnb"
+                />
+              </li>
+              <li class="partner">
+                <img
+                  src="assets/images/icons/Google-logo-grey.png"
+                  alt="Google"
+                />
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="fitting-container">
+          <a class="logo" href="index.html">
+            <img src="assets/images/sunset.png" alt="Sunset Logo" />
+          </a>
+          <div class="aknowledgement">
+            <p class="year">©2020 Some Rights Reserved</p>
+            <p class="cindy">
+              Design based on
+              <a
+                href="https://www.behance.net/gallery/29845175/CC-Global-Summit-2015"
+                >Cindy Shin</a
+              >'s design.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+@import "variables";
+
+.footer {
+  .fitting-container {
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+
+    .logo {
+      display: inline-block;
+      width: 60px;
+    }
+
+    .aknowledgement {
+      .year {
+        font-weight: bold;
+      }
+
+      .cindy {
+        a {
+          color: $orange;
+        }
+      }
+    }
+  }
+}

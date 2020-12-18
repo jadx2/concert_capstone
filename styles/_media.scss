@@ -1,0 +1,105 @@
+@media (min-width: 768px) {
+  // Index
+  .fitting-container {
+    padding: 0 30px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .greeting {
+    .fitting-container {
+      .greeting-title {
+        font-size: 8rem;
+        width: 450px;
+
+        &::before {
+          font-size: 12px;
+        }
+      }
+
+      .festival-info {
+        width: 450px;
+      }
+    }
+  }
+
+  .gallery,
+  .videos {
+    .section-title {
+      &::after {
+        left: 46%;
+      }
+    }
+  }
+
+  .main-program {
+    .fitting-container {
+      .section-title {
+        &::after {
+          left: 46%;
+        }
+      }
+
+      .program-items {
+        max-width: 700px;
+        margin: 0 auto;
+
+        .program-item {
+          max-width: 130px;
+          text-align: center;
+
+          .item-img {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .featured-artists {
+    .fitting-container {
+      .section-title {
+        &::after {
+          left: 46%;
+        }
+      }
+
+      .artists-container {
+        max-width: 700px;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .partners {
+    .fitting-container {
+      .section-title {
+        &::after {
+          left: 48%;
+        }
+      }
+    }
+  }
+
+  .intro {
+    .fitting-container {
+      width: 500px;
+    }
+  }
+
+  .cortesy {
+    .fitting-container {
+      .divisor {
+        left: 48.5%;
+      }
+
+      .cortesy-header {
+        .section-title {
+          &::after {
+            left: 46%;
+          }
+        }
+      }
+    }
+  }
+}

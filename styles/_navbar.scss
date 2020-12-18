@@ -1,0 +1,99 @@
+@import "variables";
+
+.mobile-navbar {
+  margin-bottom: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+
+  .dropdown {
+    .dropdown-toggle {
+      padding: 20px;
+
+      .fa-bars {
+        font-size: 30px;
+      }
+
+      &::after {
+        content: "";
+        display: none;
+      }
+    }
+
+    .dropdown-menu {
+      font-size: 14px;
+      text-align: center;
+      width: 120px;
+
+      .mobile-nav-social {
+        padding: 10px;
+
+        .fab {
+          font-size: 20px;
+          color: $orange;
+        }
+      }
+    }
+  }
+
+  .mobile-nav-logo {
+    margin: 15px 20px;
+    width: 50px;
+  }
+}
+
+.desktop-navbar {
+  margin-bottom: 5px;
+
+  .top-navbar {
+    background-color: $black;
+    padding: 5px 30px;
+
+    .social-links {
+      max-width: 900px;
+      margin: 0 auto;
+
+      .social-link {
+        margin-left: 18px;
+        font-size: 16px;
+
+        a {
+          color: $white;
+        }
+      }
+    }
+  }
+
+  .bottom-navbar {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    padding: 8px 30px;
+
+    .container-nav {
+      max-width: 900px;
+      margin: auto;
+
+      .top-logo {
+        display: inline-block;
+        width: 70px;
+
+        img {
+          height: auto;
+        }
+      }
+
+      .nav-links {
+        font-size: 16px;
+
+        .to-tickets {
+          border: 3px solid $orange;
+
+          a {
+            color: $orange;
+          }
+        }
+      }
+    }
+  }
+
+  .active {
+    color: $orange;
+  }
+}

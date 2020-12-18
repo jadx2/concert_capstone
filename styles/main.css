@@ -1,0 +1,581 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Cocogoose";
+  src: url(../assets/fonts/Cocogoose_trial.otf);
+}
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: Lato, sans-serif;
+  font-size: 1rem;
+  color: #272a31;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+h1 {
+  font-family: "Cocogoose", sans-serif;
+  font-size: 4.3rem;
+  font-weight: bold;
+  color: #ec5242;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 2.6rem;
+  color: #ec5242;
+}
+
+h3 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+a {
+  color: #272a31;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+a:hover {
+  color: #272a31;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .fitting-container {
+    padding: 0 30px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .greeting .fitting-container .greeting-title {
+    font-size: 8rem;
+    width: 450px;
+  }
+  .greeting .fitting-container .greeting-title::before {
+    font-size: 12px;
+  }
+  .greeting .fitting-container .festival-info {
+    width: 450px;
+  }
+
+  .gallery .section-title::after,
+.videos .section-title::after {
+    left: 46%;
+  }
+
+  .main-program .fitting-container .section-title::after {
+    left: 46%;
+  }
+  .main-program .fitting-container .program-items {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .main-program .fitting-container .program-items .program-item {
+    max-width: 130px;
+    text-align: center;
+  }
+  .main-program .fitting-container .program-items .program-item .item-img {
+    margin: 0;
+  }
+
+  .featured-artists .fitting-container .section-title::after {
+    left: 46%;
+  }
+  .featured-artists .fitting-container .artists-container {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .partners .fitting-container .section-title::after {
+    left: 48%;
+  }
+
+  .intro .fitting-container {
+    width: 500px;
+  }
+
+  .cortesy .fitting-container .divisor {
+    left: 48.5%;
+  }
+  .cortesy .fitting-container .cortesy-header .section-title::after {
+    left: 46%;
+  }
+}
+.mobile-navbar {
+  margin-bottom: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.mobile-navbar .dropdown .dropdown-toggle {
+  padding: 20px;
+}
+.mobile-navbar .dropdown .dropdown-toggle .fa-bars {
+  font-size: 30px;
+}
+.mobile-navbar .dropdown .dropdown-toggle::after {
+  content: "";
+  display: none;
+}
+.mobile-navbar .dropdown .dropdown-menu {
+  font-size: 14px;
+  text-align: center;
+  width: 120px;
+}
+.mobile-navbar .dropdown .dropdown-menu .mobile-nav-social {
+  padding: 10px;
+}
+.mobile-navbar .dropdown .dropdown-menu .mobile-nav-social .fab {
+  font-size: 20px;
+  color: #ec5242;
+}
+.mobile-navbar .mobile-nav-logo {
+  margin: 15px 20px;
+  width: 50px;
+}
+
+.desktop-navbar {
+  margin-bottom: 5px;
+}
+.desktop-navbar .top-navbar {
+  background-color: #272a31;
+  padding: 5px 30px;
+}
+.desktop-navbar .top-navbar .social-links {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.desktop-navbar .top-navbar .social-links .social-link {
+  margin-left: 18px;
+  font-size: 16px;
+}
+.desktop-navbar .top-navbar .social-links .social-link a {
+  color: #fff;
+}
+.desktop-navbar .bottom-navbar {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  padding: 8px 30px;
+}
+.desktop-navbar .bottom-navbar .container-nav {
+  max-width: 900px;
+  margin: auto;
+}
+.desktop-navbar .bottom-navbar .container-nav .top-logo {
+  display: inline-block;
+  width: 70px;
+}
+.desktop-navbar .bottom-navbar .container-nav .top-logo img {
+  height: auto;
+}
+.desktop-navbar .bottom-navbar .container-nav .nav-links {
+  font-size: 16px;
+}
+.desktop-navbar .bottom-navbar .container-nav .nav-links .to-tickets {
+  border: 3px solid #ec5242;
+}
+.desktop-navbar .bottom-navbar .container-nav .nav-links .to-tickets a {
+  color: #ec5242;
+}
+.desktop-navbar .active {
+  color: #ec5242;
+}
+
+.section-title {
+  position: relative;
+  color: #fff;
+}
+.section-title::after {
+  content: "";
+  background: #ec5242;
+  width: 60px;
+  display: block;
+  height: 2px;
+  position: absolute;
+  bottom: -10px;
+  left: 40%;
+}
+
+.tickets-info {
+  border: 1px solid #d3d3d3;
+  width: 160px;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+.tickets-info span {
+  color: #ec5242;
+}
+
+.section-title {
+  position: relative;
+  color: #fff;
+}
+.section-title::after {
+  content: "";
+  background: #ec5242;
+  width: 60px;
+  display: block;
+  height: 2px;
+  position: absolute;
+  bottom: -10px;
+  left: 40%;
+}
+
+.tickets-info {
+  border: 1px solid #d3d3d3;
+  width: 160px;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+.tickets-info span {
+  color: #ec5242;
+}
+
+.partners {
+  background-color: #272a31;
+  padding: 20px;
+}
+.partners .section-title::after {
+  width: 30px;
+  left: 46%;
+}
+.partners .partners-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-top: 30px;
+}
+.partners .partners-container .partner {
+  width: 140px;
+}
+.partners .partners-container .partner img {
+  object-fit: fill;
+}
+
+.footer .fitting-container {
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.footer .fitting-container .logo {
+  display: inline-block;
+  width: 60px;
+}
+.footer .fitting-container .aknowledgement .year {
+  font-weight: bold;
+}
+.footer .fitting-container .aknowledgement .cindy a {
+  color: #ec5242;
+}
+
+.greeting {
+  padding: 40px 20px 80px 20px;
+  background-image: url(../assets/images/backgrounds/crowd.jpg);
+  background-size: cover;
+  background-position-y: 60%;
+}
+.greeting .greeting-title {
+  position: relative;
+  margin-bottom: 20px;
+}
+.greeting .greeting-title::before {
+  content: "Creative Productions Presents:";
+  position: absolute;
+  top: -6px;
+  left: 6px;
+  font-size: 9px;
+  font-style: italic;
+}
+.greeting .festival-info {
+  font-size: 14px;
+  background-color: rgba(211, 211, 211, 0.9);
+  border: 3px solid #fff;
+  padding: 5px;
+  margin-bottom: 40px;
+}
+.greeting .date {
+  color: #fff;
+}
+.greeting .address {
+  color: #fff;
+  font-size: 18px;
+}
+
+.main-program {
+  background-image: url(../assets/images/backgrounds/blackbg.jpg);
+  background-color: #272a31;
+  padding: 20px 10px;
+}
+.main-program .program-items {
+  color: #fff;
+  padding: 30px 0;
+}
+.main-program .program-items .program-item {
+  padding: 20px;
+  margin-bottom: 10px;
+  background-color: rgba(211, 211, 211, 0.1);
+  font-size: 14px;
+}
+.main-program .program-items .program-item .item-title {
+  padding: 0;
+  color: #ec5242;
+  width: 80px;
+}
+.main-program .program-items .program-item .item-img {
+  padding: 0;
+  width: 35px;
+  display: flex;
+  margin-right: 20px;
+}
+.main-program .program-items .program-item .item-img img {
+  filter: invert(100%);
+}
+.main-program .get-tickets {
+  color: white;
+  background-color: #ec5242;
+  padding: 16px;
+  font-size: 14px;
+}
+
+.featured-artists {
+  padding: 20px 10px;
+}
+.featured-artists .section-title {
+  color: #272a31;
+}
+.featured-artists .artists-container {
+  padding: 30px 0;
+}
+.featured-artists .artists-container .artist-card {
+  margin-bottom: 20px;
+}
+.featured-artists .artists-container .artist-card .artist-pic {
+  position: relative;
+  width: 90px;
+  height: 90px;
+  margin-right: 15px;
+}
+.featured-artists .artists-container .artist-card .artist-pic .img-before {
+  background-color: #d3d3d3;
+  width: 50px;
+  height: 50px;
+}
+.featured-artists .artists-container .artist-card .artist-pic img {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.featured-artists .artists-container .artist-card .card-body {
+  padding: 5px 10px;
+  width: 200px;
+  font-size: 14px;
+}
+.featured-artists .artists-container .artist-card .card-body .artist-name {
+  margin-bottom: 3px;
+}
+.featured-artists .artists-container .artist-card .card-body .artist-info {
+  position: relative;
+  color: #ec5242;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+.featured-artists .artists-container .artist-card .card-body .artist-info::before {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 2px;
+  bottom: -10px;
+  left: 0;
+  width: 15px;
+  background-color: #d3d3d3;
+}
+.featured-artists .more {
+  border: 1px solid #d3d3d3;
+  width: 100%;
+  padding: 10px 0;
+  font-size: 15px;
+}
+
+.intro {
+  padding: 40px 20px 80px 20px;
+  background-image: url(../assets/images/backgrounds/crowd.jpg);
+  background-size: cover;
+  background-position-y: 50%;
+  text-align: center;
+  font-size: 14px;
+}
+.intro .about-title {
+  margin-bottom: 20px;
+}
+.intro .about-info {
+  background-color: rgba(211, 211, 211, 0.9);
+  border: 3px solid #fff;
+  max-width: 500px;
+  margin: 0 auto 20px auto;
+}
+.intro .contact {
+  color: #fff;
+  font-weight: bold;
+}
+.intro .email {
+  color: #fff;
+  font-weight: bold;
+}
+
+.gallery {
+  background-color: #272a31;
+  background-image: url(../assets/images/backgrounds/blackbg.jpg);
+  padding: 40px 20px;
+}
+.gallery .pics-container {
+  padding: 30px 0;
+}
+.gallery .pics-container .pic {
+  margin-bottom: 10px;
+  border: 3px solid #fff;
+  width: 320px;
+  height: 190px;
+}
+.gallery .get-tickets {
+  color: white;
+  background-color: #ec5242;
+  padding: 16px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.videos {
+  padding: 40px 20px;
+}
+.videos .section-title {
+  color: #272a31;
+}
+.videos .videos-container {
+  padding: 30px 0;
+}
+.videos .videos-container .video {
+  margin-bottom: 10px;
+}
+
+.tickets-prices {
+  padding: 0 20px 40px 20px;
+  background-color: rgba(211, 211, 211, 0.1);
+}
+.tickets-prices .tickets-header {
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 14px;
+}
+.tickets-prices .tickets-header .tickets-title {
+  margin-bottom: 20px;
+}
+.tickets-prices .table-border {
+  margin: 0 auto 40px auto;
+  padding: 5px;
+  max-width: 700px;
+  background-image: repeating-linear-gradient(-45deg, #fff, #fff 5px, #ec5242 5px, #ec5242 10px, #fff 10px, #fff 15px, #192d60 15px, #192d60 20px);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.tickets-prices .table-border .table {
+  background-color: #fff;
+  width: 100%;
+  font-size: 12px;
+}
+.tickets-prices .table-border .table .table-price {
+  color: #ec5242;
+  font-weight: bold;
+  font-size: 14px;
+}
+.tickets-prices .map {
+  margin: 0 auto 40px auto;
+  max-width: 500px;
+}
+
+.cortesy {
+  padding: 0 20px 40px 20px;
+  font-size: 14px;
+  position: relative;
+}
+.cortesy .divisor {
+  width: 40px;
+  height: 40px;
+  background-color: #ec5242;
+  transform: rotate(45deg);
+  position: absolute;
+  left: 44.5%;
+  top: -25px;
+}
+.cortesy .divisor .divisor-content {
+  font-size: 24px;
+  color: #fff;
+  font-weight: bold;
+  transform: rotate(45deg);
+}
+.cortesy .cortesy-header {
+  padding: 40px 20px;
+}
+.cortesy .cortesy-header .section-title {
+  color: #272a31;
+  margin-bottom: 30px;
+}
+.cortesy .cortesy-header .section-title::after {
+  left: 39%;
+}
+.cortesy .table {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  max-width: 700px;
+  margin: 0 auto 30px auto;
+}
+.cortesy .table .height {
+  height: 60px;
+  align-items: center;
+}
+.cortesy .table .form-check {
+  width: 65px;
+}
+.cortesy .checkout {
+  color: white;
+  background-color: #ec5242;
+  padding: 16px;
+  font-size: 14px;
+}
+
+/*# sourceMappingURL=main.css.map */
