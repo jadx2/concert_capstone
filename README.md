@@ -25,7 +25,7 @@ For this project SASS was used as the preprocessor to implement a modular workfl
 👤 **Author1**
 
 - GitHub: [@jadx2](https://github.com/jadx2)
-- Twitter: [@usernamejaim](https://twitter.com/usernamejaim)
+- Twitter: [@thecatcodes](https://twitter.com/thecatcodes)
 
 ## 🤝 Contributing
 
